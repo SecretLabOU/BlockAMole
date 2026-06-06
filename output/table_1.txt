@@ -1,0 +1,12 @@
+Table 1  -  Adversary profiles
+==============================================================
+
+Censor         address disc. lam_a  mu/lam_a  collateral gamma
+--------------------------------------------------------------
+GFW (China)                    1.5      2.00              0.20
+TSPU (Russia)                  0.8      3.75              0.05
+Iran                           1.0      3.00              0.10
+
+Table 1: Adversary profiles. Mechanisms fixed to documented GFW, TSPU, and
+Iranian designs; the numbers are deliberately adversary-favorable so reported
+guarantees are conservative. Source: censor_models.py.

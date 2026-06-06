@@ -1,0 +1,13 @@
+Table 4  -  Simulator transition rates
+==================================================
+
+layer    transition                   rate
+--------------------------------------------------
+address  c -> c-1  (block)            lam_a * c
+address  c -> c+1  (rotate/recover)   mu * (n - c)
+domain   K -> K+1  (mint),  K < kmax  lam_intro
+domain   K -> K-1  (burn),  K >= 1    lam_disc
+
+Table 4: Simulator transition rates. The two layers are advanced by the next-event
+(Gillespie) method. Bursty burns replace the domain death by a batch of b removals
+at rate lam_disc/b, leaving the mean burn rate unchanged. Source: rotation_game.py.

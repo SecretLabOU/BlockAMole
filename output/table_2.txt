@@ -1,0 +1,12 @@
+Table 2  -  Closed-form law vs. simulation
+============================================================
+
+beta           0.4   0.6   0.8   0.9     1   1.2   1.5     2
+------------------------------------------------------------
+closed form   1.00  .993  .961  .930  .889  .793  .658  .499
+sim. (avg)    1.00  .993  .961  .930  .890  .794  .659  .500
+sim. (intvl)  .997  .971  .865  .772  .662  .439  .208  .052
+
+Table 2: Closed-form availability law vs. simulation (kmax=8, canonical config
+n=8, mu/lam_a=3). Time-average availability matches the closed form; the
+interval metric is the stricter, binding one. Regenerated from this run.

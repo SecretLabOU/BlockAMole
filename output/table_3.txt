@@ -1,0 +1,11 @@
+Table 3  -  Interval frontier (renewal vs. simulation)
+======================================================
+
+session length T            1     5    20
+-----------------------------------------
+approximation (renewal)  0.74  0.62  0.52
+simulation               0.75  0.65  0.55
+
+Table 3: Interval frontier beta*(alpha=0.95, T). The renewal approximation
+  interval-avail = (1 - pi0) * exp(-pi0 * lam_intro * T)
+tracks the simulated frontier to within the sweep resolution (kmax=8, lam_intro=1).
