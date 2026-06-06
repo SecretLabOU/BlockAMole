@@ -1,4 +1,4 @@
-# Reproducibility package
+# Block-A-Mole Reproducibility Package
 
 Public code for **"Block-A-Mole: The Sustainability Frontier of Moving-Target
 Censorship Resistance."**
