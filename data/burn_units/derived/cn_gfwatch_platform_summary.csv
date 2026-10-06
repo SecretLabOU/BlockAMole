@@ -1,0 +1,20 @@
+platform,gfw_rows,gfw_tenants,gfw_rules,gfw_suffix_rule,gfw_suffix_onset,gfw_suffix_onset_source,gfw_tenant_first,gfw_tenants_pre,gfw_tenant_rule_rows,gfw_rows_in_tranco,gfw_first_any,gfw_lc_max,gfw_class,gfw_pre_rows_tenant_rule,gfw_onset_left_censored,gfw_tenants_blocked_last30d
+github.io,456,259,230,False,,,2020-03-20,257,452,4,2020-03-20,2024-09-06,tenant,452.0,False,192.0
+pages.dev,12,6,6,False,,,2022-05-02,6,12,0,2022-05-02,2024-09-06,tenant,12.0,False,4.0
+workers.dev,26353,7339,12,True,2022-04-30,"first_checked of the bare suffix (zone-file SLD, tested daily)",2021-03-21,5,10,353,2021-03-21,2024-09-06,mixed,3.0,False,225.0
+vercel.app,124254,63265,2,True,2022-08-26,"first_checked of the bare suffix (zone-file SLD, tested daily)",2022-07-15,1,1,137,2022-07-15,2024-09-06,mixed,1.0,False,811.0
+netlify.app,16,8,8,False,,,2022-05-02,8,16,0,2022-05-02,2024-09-06,tenant,16.0,False,8.0
+herokuapp.com,143792,72261,22,True,2022-10-11,"first_checked of the bare suffix (zone-file SLD, tested daily)",2020-08-31,54,32,814,2020-08-31,2024-09-06,mixed,29.0,False,892.0
+appspot.com,76491,42001,3,True,2020-03-20,"first_checked of the bare suffix (zone-file SLD, tested daily)",,0,0,1149,2020-03-20,2024-09-06,suffix,0.0,True,2652.0
+web.app,4,3,3,False,,,2021-03-21,3,4,0,2021-03-21,2024-09-06,tenant,4.0,False,1.0
+firebaseapp.com,7,4,4,False,,,2020-09-24,4,7,0,2020-09-24,2024-09-06,tenant,7.0,False,2.0
+cloudfront.net,186,126,156,False,,,2020-03-20,126,183,0,2020-03-20,2024-09-06,tenant,183.0,False,102.0
+azurewebsites.net,46,28,32,False,,,2020-03-20,28,46,4,2020-03-20,2024-09-06,tenant,46.0,False,25.0
+azurefd.net,3,2,3,False,,,2024-01-29,2,3,0,2024-01-29,2024-06-02,tenant,3.0,False,0.0
+run.app,0,0,0,False,,,,0,0,0,,,none,,,
+on.aws,0,0,0,False,,,,0,0,0,,,none,,,
+deno.dev,2,1,1,False,,,2022-10-11,1,2,0,2022-10-11,2024-09-06,tenant,2.0,False,1.0
+fly.dev,6,3,3,False,,,2022-02-16,3,6,0,2022-02-16,2024-09-06,tenant,6.0,False,3.0
+onrender.com,4,2,2,False,,,2022-10-02,2,4,0,2022-10-02,2024-09-06,tenant,4.0,False,2.0
+trycloudflare.com,0,0,0,False,,,,0,0,0,,,none,,,
+r2.dev,0,0,0,False,,,,0,0,0,,,none,,,

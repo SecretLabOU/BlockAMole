@@ -1,0 +1,38 @@
+event_id,country,metric,pre_median,pre_n,during_median,during_n,chg_pct,during_max_ratio,during_min_ratio,note
+RU-DTLS-2024-11,ru,http_polls_RU,1188816.0,14,2182704.0,16,83.603,2.562,0.823,per-country counts rounded up to multiples of 8
+RU-DTLS-2026-03-03(timeline),ru,http_polls_RU,1673916.0,14,1192888.0,7,-28.737,0.775,0.644,per-country counts rounded up to multiples of 8
+RU-DTLS-2026-03-03(timeline),ru,amp_polls_RU,1065652.0,14,689176.0,7,-35.328,0.793,0.623,per-country counts rounded up to multiples of 8
+RU-DTLS-2026-03-03(timeline),ru,sqs_polls_RU,3228.0,14,2760.0,7,-14.498,1.378,0.758,per-country counts rounded up to multiples of 8
+RU-DTLS-2026-03-30(#603),ru,http_polls_RU,1984940.0,14,7000608.0,7,252.686,3.779,3.072,per-country counts rounded up to multiples of 8
+RU-DTLS-2026-03-30(#603),ru,amp_polls_RU,1410512.0,14,6002448.0,7,325.551,4.922,3.85,per-country counts rounded up to multiples of 8
+RU-DTLS-2026-03-30(#603),ru,sqs_polls_RU,3600.0,14,10600.0,7,194.444,3.404,2.104,per-country counts rounded up to multiples of 8
+Fastly-2024-03-01,ALL,http_polls,1482920.0,14,210960.0,7,-85.774,0.583,0.109,
+Fastly-2024-03-01,ALL,amp_polls,1054848.0,14,995720.0,7,-5.605,0.975,0.901,
+Fastly-2024-03-01,ALL,sqs_polls,8.0,14,80.0,7,900.0,29.0,7.0,
+Fastly-2024-03-01,ALL,client_matches,2515900.0,14,1191248.0,7,-52.651,0.743,0.463,
+Fastly-2024-03-01,ALL,ips_total,146928.0,14,143780.0,7,-2.143,1.01,0.911,
+FrontDNS-2023-09-20,ALL,client_matches,3938632.0,14,1241880.0,7,-68.469,0.995,0.3,
+FrontDNS-2023-09-20,ALL,ips_total,143797.0,14,145402.0,7,1.116,1.04,0.869,
+DNSSEC-2025-09-20,ALL,http_polls,3915412.0,14,4164712.0,2,6.367,1.088,1.039,
+DNSSEC-2025-09-20,ALL,amp_polls,3059112.0,14,3155672.0,2,3.156,1.059,1.004,
+DNSSEC-2025-09-20,ALL,sqs_polls,92840.0,14,102028.0,2,9.897,1.113,1.085,
+DNSSEC-2025-09-20,ALL,client_matches,5327580.0,14,5488140.0,2,3.014,1.042,1.018,
+DNSSEC-2025-09-20,ALL,client_timeouts,1717628.0,14,1934008.0,2,12.598,1.194,1.058,
+DNSSEC-2025-09-20,ALL,ips_total,164071.5,14,150071.5,2,-8.533,0.945,0.884,
+DNSSEC-2025-09-20,ru,http_polls_RU,1238420.0,14,1353192.0,2,9.268,1.115,1.07,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,ru,amp_polls_RU,1294288.0,14,1245660.0,2,-3.757,0.997,0.928,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,ru,sqs_polls_RU,1348.0,14,1608.0,2,19.288,1.318,1.068,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,ir,http_polls_IR,504524.0,14,500796.0,2,-0.739,1.017,0.969,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,ir,amp_polls_IR,111352.0,14,102104.0,2,-8.305,0.923,0.911,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,ir,sqs_polls_IR,60.0,14,40.0,2,-33.333,1.067,0.267,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,cn,http_polls_CN,273156.0,14,355424.0,2,30.118,1.304,1.298,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,cn,amp_polls_CN,4172.0,14,3600.0,2,-13.71,0.886,0.84,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,cn,sqs_polls_CN,44860.0,14,51732.0,2,15.319,1.16,1.147,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,tm,http_polls_TM,176.0,14,656.0,2,272.727,4.045,3.409,per-country counts rounded up to multiples of 8
+DNSSEC-2025-09-20,tm,amp_polls_TM,468900.0,14,853796.0,2,82.085,1.835,1.806,per-country counts rounded up to multiples of 8
+CDN77-outage-2025-06-10,ALL,http_polls,1849788.0,14,1460368.0,1,-21.052,0.789,0.789,
+CDN77-outage-2025-06-10,ALL,amp_polls,1197392.0,14,1035800.0,1,-13.495,0.865,0.865,
+CDN77-outage-2025-06-10,ALL,sqs_polls,38676.0,14,45024.0,1,16.413,1.164,1.164,
+CDN77-outage-2025-06-10,ALL,client_matches,3103148.0,14,2541184.0,1,-18.109,0.819,0.819,
+CDN77-outage-2025-06-10,ALL,client_timeouts,1290468.0,14,1118352.0,1,-13.337,0.867,0.867,
+CDN77-outage-2025-06-10,ALL,ips_total,167392.0,14,168726.0,1,0.797,1.008,1.008,

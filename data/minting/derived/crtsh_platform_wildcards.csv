@@ -1,0 +1,6 @@
+identity_queried,crtsh_id,issuer_name,common_name,name_value,not_before,not_after,retrieved_utc
+*.github.io,28476246866,"C=US, O=Let's Encrypt, CN=YR1",*.github.io,*.github.io,2026-08-02T23:38:02,2026-10-31T23:38:01,2026-10-03T22:05:27Z
+*.github.io,28476249449,"C=US, O=Let's Encrypt, CN=YR1",*.github.io,*.github.io,2026-08-02T23:38:02,2026-10-31T23:38:01,2026-10-03T22:05:27Z
+*.netlify.app,24448352519,"C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",*.netlify.app,*.netlify.app,2026-02-16T00:00:00,2027-03-19T23:59:59,2026-10-03T22:08:54Z
+*.netlify.app,24465011680,"C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",*.netlify.app,*.netlify.app,2026-02-16T00:00:00,2027-03-19T23:59:59,2026-10-03T22:08:54Z
+*.web.app,28097297159,"C=US, O=Google Trust Services, CN=WR4",web.app,*.web.app,2026-07-20T14:59:55,2026-10-18T14:59:54,2026-10-03T22:12:05Z

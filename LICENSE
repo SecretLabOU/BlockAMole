@@ -1,6 +1,20 @@
+Licenses of this repository
+
+The repository holds code written by the authors, results and derived data
+that the authors computed, and short excerpts of third-party sources. Each
+part is licensed as stated below. The third-party datasets that the fetch
+scripts download are not part of the repository. They keep their own
+licenses, which data/<analysis>/SOURCES.md and data/<analysis>/raw/manifest.json
+record for each file.
+
+
+1. Code: MIT License
+
+This applies to every Python file (*.py) and to simulations/code/paper.mplstyle.
+
 MIT License
 
-Copyright (c) 2026 SecretLabOU
+Copyright (c) 2026 The authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +33,64 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+2. Results, derived data and documentation: CC BY 4.0
+
+Copyright (c) 2026 The authors. Licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0),
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+This applies to
+- the 23 result files in simulations/results/,
+- the figures figures/frontier.pdf and figures/phase.pdf,
+- the files in data/burn_units/derived/, data/snowflake/derived/,
+  data/literature/derived/ and data/minting/derived/, except the files listed
+  in part 3,
+- the manifests data/burn_units/raw/manifest.json,
+  data/snowflake/raw/manifest.json, data/literature/raw/manifest.json and
+  data/minting/raw/manifest.json,
+- the documentation (the Markdown files and the requirements files). The
+  code snippets in the documentation may also be used under the MIT License
+  of part 1.
+
+
+3. Data derived from OONI: CC BY-NC-SA 4.0
+
+These files contain or are computed from measurements of the Open Observatory
+of Network Interference (OONI), https://ooni.org. OONI publishes its data under
+CC BY-NC-SA 4.0, so these files are licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA
+4.0), https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode, with
+attribution to OONI and to the authors.
+
+- data/burn_units/derived/burn_units.csv
+- data/burn_units/derived/burn_units_table.tex
+- data/burn_units/derived/burn_units_evidence_long.csv
+- data/burn_units/derived/ooni_cn_azurefd_daily.csv
+- data/burn_units/derived/ooni_cn_monthly.csv
+- data/burn_units/derived/ooni_platform_summary.csv
+- data/burn_units/derived/ru_ooni_vs_registry.csv
+- data/burn_units/derived/run_meta.json
+
+No other data file of the repository is computed from OONI measurements. The
+documentation quotes some values of the files above, with attribution to OONI.
+
+
+4. Quoted passages and repeated third-party facts
+
+Some files quote third-party papers, documentation pages, reports and commit
+messages verbatim, to record where a value comes from. This holds for
+data/literature/params_spec.py and data/minting/facts.py, for the quote checks
+in the analysis scripts, and for the tables that carry the quotes:
+data/literature/derived/params_table.csv,
+data/literature/derived/quote_verification.csv,
+data/minting/derived/doc_facts.csv,
+data/snowflake/derived/churn_published.csv, the description column of
+data/snowflake/derived/event_table.csv,
+data/burn_units/derived/qualitative_events.csv, and the commit subjects in
+data/snowflake/derived/summary.json and data/snowflake/raw/manifest.json.
+These passages are cited excerpts. They keep the rights of their sources, and
+the licenses above cover only the authors' selection, annotations and
+computed values. data/minting/derived/psl_platform_suffixes.csv repeats rules
+of the Public Suffix List, which is licensed MPL-2.0.

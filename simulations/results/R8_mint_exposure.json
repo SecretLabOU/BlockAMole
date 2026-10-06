@@ -1,0 +1,351 @@
+{
+ "rhos": [
+  0.0,
+  0.25,
+  0.5,
+  0.75,
+  0.9,
+  1.0
+ ],
+ "thetas": [
+  "inf",
+  10.0,
+  1.0,
+  0.1
+ ],
+ "table": {
+  "8": {
+   "inf": {
+    "0.0": {
+     "beta_star_interval": 0.6613384448508816,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.5096453419438101,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.3518397352692565,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.18521153711403016,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.0780706225211987,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": null,
+     "status": "none"
+    }
+   },
+   "10.0": {
+    "0.0": {
+     "beta_star_interval": 0.6613384448508784,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.5119046347365295,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.3551190715461613,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.1879859310791548,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.07956104552770973,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": null,
+     "status": "none"
+    }
+   },
+   "1.0": {
+    "0.0": {
+     "beta_star_interval": 0.6613384448508784,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.5304495998681934,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.3842577060866308,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.21493622393122436,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.09474860523830972,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": null,
+     "status": "none"
+    }
+   },
+   "0.1": {
+    "0.0": {
+     "beta_star_interval": 0.6613384448508784,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.6010448097293456,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.530089349011431,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.4402583321149321,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.3674044142714766,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": 0.2983570591465498,
+     "status": "ok"
+    }
+   }
+  },
+  "32": {
+   "inf": {
+    "0.0": {
+     "beta_star_interval": 0.9626961788857181,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.7266959037806257,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.4887734641179693,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.24791633238274818,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.10081042804610596,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": null,
+     "status": "none"
+    }
+   },
+   "10.0": {
+    "0.0": {
+     "beta_star_interval": 0.9626961788857181,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.728819496756692,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.49176191153102716,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.2503474538704874,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.10207995664301976,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": null,
+     "status": "none"
+    }
+   },
+   "1.0": {
+    "0.0": {
+     "beta_star_interval": 0.9626961788857181,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.7465180392837168,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.5186155605402257,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.2744345416965442,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.11558996511860244,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": null,
+     "status": "none"
+    }
+   },
+   "0.1": {
+    "0.0": {
+     "beta_star_interval": 0.9626961788857181,
+     "status": "ok"
+    },
+    "0.25": {
+     "beta_star_interval": 0.8350841384327815,
+     "status": "ok"
+    },
+    "0.5": {
+     "beta_star_interval": 0.6945588942768536,
+     "status": "ok"
+    },
+    "0.75": {
+     "beta_star_interval": 0.5386571787679284,
+     "status": "ok"
+    },
+    "0.9": {
+     "beta_star_interval": 0.42986516726516744,
+     "status": "ok"
+    },
+    "1.0": {
+     "beta_star_interval": 0.337606208494491,
+     "status": "ok"
+    }
+   }
+  }
+ },
+ "theta_inf_limit_check": [
+  {
+   "rho": 0.25,
+   "theta": 1000.0,
+   "max_abs_diff_window": 2.844828304660041e-05
+  },
+  {
+   "rho": 0.25,
+   "theta": 10000.0,
+   "max_abs_diff_window": 2.8450836125903933e-06
+  },
+  {
+   "rho": 0.5,
+   "theta": 1000.0,
+   "max_abs_diff_window": 0.00014548357428068037
+  },
+  {
+   "rho": 0.5,
+   "theta": 10000.0,
+   "max_abs_diff_window": 1.4548650309476052e-05
+  },
+  {
+   "rho": 0.9,
+   "theta": 1000.0,
+   "max_abs_diff_window": 0.000139332594189856
+  },
+  {
+   "rho": 0.9,
+   "theta": 10000.0,
+   "max_abs_diff_window": 1.3938372360522422e-05
+  }
+ ],
+ "mc_check": [
+  {
+   "rho": 0.5,
+   "theta": 1.0,
+   "beta": 0.3,
+   "kmax": 8,
+   "exact_window": 0.9888577872266036,
+   "mc_window": 0.9892952794947354,
+   "mc_window_se": 0.00025792478884549265,
+   "z_window": 1.6962009355134506,
+   "exact_timeavg": 0.996986015820024,
+   "mc_timeavg": 0.9971986631670418,
+   "mc_timeavg_se": 9.150856005324086e-05,
+   "z_timeavg": 2.323797324469286,
+   "mc_seeds": 16,
+   "mc_horizon": 100000.0
+  },
+  {
+   "rho": 0.9,
+   "theta": 10.0,
+   "beta": 0.05,
+   "kmax": 8,
+   "exact_window": 0.9974334915786511,
+   "mc_window": 0.9973262323824836,
+   "mc_window_se": 0.00024148482892045236,
+   "z_window": -0.4441653608096004,
+   "exact_timeavg": 0.99838189543873,
+   "mc_timeavg": 0.9983059301155319,
+   "mc_timeavg_se": 0.00016885661119817199,
+   "z_timeavg": -0.44988065707973274,
+   "mc_seeds": 16,
+   "mc_horizon": 100000.0
+  },
+  {
+   "rho": 1.0,
+   "theta": 0.1,
+   "beta": 0.5,
+   "kmax": 8,
+   "exact_window": 0.8236286221005242,
+   "mc_window": 0.8223056658083964,
+   "mc_window_se": 0.0007655527427419558,
+   "z_window": -1.72810600532822,
+   "exact_timeavg": 0.954702175224105,
+   "mc_timeavg": 0.9543576275805812,
+   "mc_timeavg_se": 0.0003625016561775574,
+   "z_timeavg": -0.9504719155134298,
+   "mc_seeds": 16,
+   "mc_horizon": 100000.0
+  },
+  {
+   "rho": 0.75,
+   "theta": 1.0,
+   "beta": 0.2,
+   "kmax": 8,
+   "exact_window": 0.9669444931584579,
+   "mc_window": 0.9666992049014649,
+   "mc_window_se": 0.0010088271539878582,
+   "z_window": -0.24314200507329406,
+   "exact_timeavg": 0.9897211348758008,
+   "mc_timeavg": 0.9896181810008727,
+   "mc_timeavg_se": 0.0003761890745918535,
+   "z_timeavg": -0.273675877056746,
+   "mc_seeds": 16,
+   "mc_horizon": 100000.0
+  }
+ ],
+ "units": "theta in units of lam_intro; beta = lam_disc/lam_intro with lam_intro counting every mint (exposed or not)",
+ "state_space": "(E,U) with E+U <= kmax; see exact.exposure_chain",
+ "_meta": {
+  "runtime_s": 26.9,
+  "generated_utc": "2026-10-05T06:42:04Z",
+  "python": "3.13.7",
+  "numpy": "2.2.4",
+  "scipy": "1.15.3",
+  "code_sha256": {
+   "exact.py": "b58d5ba5421a3656af5ad53af827a2f19786c039830b9e4934a86be8980b0c38",
+   "exact_experiments.py": "5fafb3340b0204408a24899c00902e3b178c60d71f9051c05bd72b865ec6f304"
+  },
+  "canonical": {
+   "n": 8,
+   "lam_intro": 1.0,
+   "lam_a": 1.0,
+   "mu": 3.0,
+   "kmax": 8,
+   "T": 5.0,
+   "alpha": 0.95
+  },
+  "method": "exact CTMC (stationary law + pi_U expm(Q_UU T) 1); MC = independent unit-level Monte Carlo cross-check"
+ }
+}

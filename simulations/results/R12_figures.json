@@ -1,0 +1,29 @@
+{
+ "figures": [
+  "figures_exact/fig_phase_exact.pdf",
+  "figures_exact/fig_frontier_kmax.pdf",
+  "figures_exact/fig_robustness.pdf",
+  "figures_exact/fig_robustness_wide.pdf"
+ ],
+ "_meta": {
+  "runtime_s": 6.29,
+  "generated_utc": "2026-10-05T06:43:01Z",
+  "python": "3.13.7",
+  "numpy": "2.2.4",
+  "scipy": "1.15.3",
+  "code_sha256": {
+   "exact.py": "b58d5ba5421a3656af5ad53af827a2f19786c039830b9e4934a86be8980b0c38",
+   "exact_experiments.py": "5fafb3340b0204408a24899c00902e3b178c60d71f9051c05bd72b865ec6f304"
+  },
+  "canonical": {
+   "n": 8,
+   "lam_intro": 1.0,
+   "lam_a": 1.0,
+   "mu": 3.0,
+   "kmax": 8,
+   "T": 5.0,
+   "alpha": 0.95
+  },
+  "method": "exact CTMC (stationary law + pi_U expm(Q_UU T) 1); MC = independent unit-level Monte Carlo cross-check"
+ }
+}

@@ -1,0 +1,74 @@
+# Shared figure style for the moving-target censorship paper.
+# Serif (STIX) figure font with matching math glyphs. Refined, professional, and colour-blind-safe
+# (Okabe-Ito palette), with despined axes, outward ticks, and a light grid.
+
+font.family:        serif
+font.serif:         STIXGeneral, TeX Gyre Termes, DejaVu Serif
+mathtext.fontset:   stix
+
+font.size:          9
+axes.titlesize:     9
+axes.labelsize:     9.5
+legend.fontsize:    8
+xtick.labelsize:    8
+ytick.labelsize:    8
+
+# foreground and spines: soft near-black, only left+bottom kept
+text.color:         1a1a1a
+axes.labelcolor:    1a1a1a
+axes.edgecolor:     595959
+axes.linewidth:     0.9
+axes.spines.top:    False
+axes.spines.right:  False
+axes.axisbelow:     True
+
+# ticks: outward and subtle, with minor ticks for a finished look
+xtick.color:        595959
+ytick.color:        595959
+xtick.direction:    out
+ytick.direction:    out
+xtick.major.size:   3.2
+ytick.major.size:   3.2
+xtick.major.width:  0.8
+ytick.major.width:  0.8
+xtick.minor.size:   1.8
+ytick.minor.size:   1.8
+xtick.minor.width:  0.6
+ytick.minor.width:  0.6
+xtick.minor.visible: True
+ytick.minor.visible: True
+
+# grid: faint, behind the data
+axes.grid:          True
+grid.color:         9aa0a6
+grid.alpha:         0.22
+grid.linewidth:     0.5
+grid.linestyle:     -
+
+# lines and markers
+lines.linewidth:        1.8
+lines.markersize:       4
+lines.markeredgewidth:  0.9
+lines.solid_capstyle:   round
+lines.solid_joinstyle:  round
+lines.dash_capstyle:    round
+
+# legend
+legend.frameon:        False
+legend.handlelength:   1.7
+legend.handletextpad:  0.5
+legend.columnspacing:  1.1
+legend.labelspacing:   0.3
+
+# figure / output
+figure.facecolor:   white
+axes.facecolor:     white
+figure.dpi:         150
+savefig.dpi:        600
+savefig.bbox:       tight
+savefig.pad_inches: 0.02
+pdf.fonttype:       42
+ps.fonttype:        42
+
+# colour-blind-safe, high-contrast cycle (Okabe-Ito, reordered for contrast)
+axes.prop_cycle: cycler('color', ['0072B2', 'D55E00', '009E73', 'CC79A7', 'E69F00', '56B4E9'])

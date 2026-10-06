@@ -1,0 +1,34 @@
+source,claim,value,unit,quote,context,pdf,verified_in_pdf_text,pdf_page
+Bocovich2024,daily_unique_proxy_ips_2024,140000.0,proxy IPs/day,"140,000 daily IP addresses",unique proxy IPs per day around early 2024 (Fig. 6 discussion),lit/bocovich2024_usenixsec24.pdf,True,11.0
+Bocovich2024,overlap_after_1h,97.3,% of reference-window IPs still present,97.3% of addresses in common,"proxy churn experiment, January 2023 (Sec. 4.3, Fig. 7)",lit/bocovich2024_usenixsec24.pdf,True,12.0
+Bocovich2024,overlap_after_12h,68.8,%,"after 12 hours, the fraction had fallen to 68.8%",Sec. 4.3,lit/bocovich2024_usenixsec24.pdf,True,12.0
+Bocovich2024,overlap_after_24h,38.2,%,"after 24 hours, 38.2%",Sec. 4.3,lit/bocovich2024_usenixsec24.pdf,True,12.0
+Bocovich2024,overlap_after_40h,27.6,%,"after 40 hours, 27.6%",Sec. 4.3,lit/bocovich2024_usenixsec24.pdf,True,12.0
+Chen2026,enumerated_unique_proxy_ips_48d,21000.0,"proxy IPs (lower bound, 'over')","over 21,000 unique proxy IP addresses","48 days of measurement, May-June 2025 (abstract)",lit/chen2026_arxiv2609.12242.pdf,True,1.0
+Chen2026,enumerated_ases,1000.0,ASes ('almost'),"almost 1,000 autonomous systems",abstract,lit/chen2026_arxiv2609.12242.pdf,True,1.0
+Chen2026,top1pct_AS_block_share,30.0,% of observed Snowflakes ('more than'),blocks more than 30% of observed Snowflakes,abstract,lit/chen2026_arxiv2609.12242.pdf,True,1.0
+Chen2026,top1pct_AS_tranco_top1m_collateral,2.5,% of Tranco top-1M domains (~),2.5% of Top 1M domains,abstract,lit/chen2026_arxiv2609.12242.pdf,True,1.0
+Chen2026,churn_reduces_blocking,,qualitative,higher proxy churn significantly reduces blocking effectiveness,abstract (simulation),lit/chen2026_arxiv2609.12242.pdf,True,1.0
+Chen2026,churn_limits_enumeration,,qualitative,proxy churn limits the overall effectiveness of enumeration over time,abstract (measurement),lit/chen2026_arxiv2609.12242.pdf,True,1.0
+Chen2026,top1pct_AS_tranco_top100_collateral,0.0,% of Tranco top-100 domains,affecting 0% of Tranco Top 100 domains,abstract,lit/chen2026_arxiv2609.12242.pdf,True,1.0
+Chen2026,top1pct_AS_tranco_top1m_collateral_exact,2.45,% of Tranco top-1M domains,only 2.45% of Tranco Top 1M domains,Sec. 1 (contributions),lit/chen2026_arxiv2609.12242.pdf,True,2.0
+Chen2026,churn_strongest_effect_on_blocking,,qualitative (simulation),Churn has the strongest effect on blocking,simulation results (Effect of Churn Rate),lit/chen2026_arxiv2609.12242.pdf,True,10.0
+Bocovich2024,half_pool_turnover_about_20h,20.0,hours (about),It takes about 20 hours for 50% of the proxy pool to turn over,Fig. 7 caption (January 2023),lit/bocovich2024_usenixsec24.pdf,True,12.0
+Bocovich2024,rendezvous_front_collateral,,design rationale,"A censor cannot easily block domain-fronted rendezvous without also blocking unrelated connections to the front domain, which should be selected to have high value to the censor",Sec. 2.1,lit/bocovich2024_usenixsec24.pdf,True,5.0
+Bocovich2024,amp_rendezvous_collateral,,design rationale,This rendezvous method is not easily blocked without blocking the cache server as a whole,Sec. 2.1 (AMP cache),lit/bocovich2024_usenixsec24.pdf,True,5.0
+Bocovich2024,frontdns_2023_09_20_not_censor,,event label,The drop in users on 2023-09-20 was not caused by any censor action,Sec. 4.1: front domain changed hosting to a different CDN,lit/bocovich2024_usenixsec24.pdf,True,11.0
+Bocovich2024,ru_2021_dtls_supported_groups,,event label,"Specifically, it was the presence of a supported_groups extension in the DTLS Server Hello message produced by Pion","Sec. 5.1, Russia December 2021",lit/bocovich2024_usenixsec24.pdf,True,14.0
+Bocovich2024,ru_users_dec2021_400_to_4000,,event context,"From the beginning to the end of December 2021, the number of users in Russia grew from about 400 to over 4,000",Sec. 5.1,lit/bocovich2024_usenixsec24.pdf,True,14.0
+Bocovich2024,ir_2022_10_tls_fingerprint,,event label,"the cause of the decline was TLS fingerprint blocking, which stopped Snowflake rendezvous from working","Sec. 5.2, Iran October 2022",lit/bocovich2024_usenixsec24.pdf,True,15.0
+Bocovich2024,ir_2023_01_front_sni_block,,event label,The default rendezvous front domain was blocked (by TLS SNI) in some ISPs between 2023-01-16 and 2023-01-24,Sec. 5.2,lit/bocovich2024_usenixsec24.pdf,True,15.0
+Bocovich2024,ir_2023_01_amp_continued,,event label,AMP cache rendezvous continued to work,Sec. 5.2,lit/bocovich2024_usenixsec24.pdf,True,15.0
+Bocovich2024,ir_2023_later_sporadic_little_effect,,event label,"If these were further attempts at blocking, they did not have much of an effect",Sec. 5.2,lit/bocovich2024_usenixsec24.pdf,True,15.0
+Bocovich2024,cn_2019_proxy_ip_block_outgrown,,event label,It stopped being a problem as the proxy pool grew in size,"Sec. 5.3, China May 2019 (proxy IP blocking)",lit/bocovich2024_usenixsec24.pdf,True,15.0
+Bocovich2024,cn_2019_stun_block_more_servers,,event label,The solution was to add more STUN servers,"Sec. 5.3, China May 2019 (default STUN server blocked)",lit/bocovich2024_usenixsec24.pdf,True,15.0
+Bocovich2024,cn_2023_05_multi_sni_trigger,,event label,censorship was triggered by observing multiple (two or three) HTTPS connections with the same TLS SNI to certain IP addresses within a short time,"Sec. 5.3, China May 2023",lit/bocovich2024_usenixsec24.pdf,True,16.0
+Bocovich2024,cn_2023_05_users_halved,,event label,The user count from China was about halved during those three days,Sec. 5.3,lit/bocovich2024_usenixsec24.pdf,True,16.0
+Bocovich2024,tm_2021_10_24_front_block,,event label,The drop on 2021-10-24 was caused by blocking of the default broker front domain,Sec. 5.4,lit/bocovich2024_usenixsec24.pdf,True,16.0
+Bocovich2024,tm_alt_front_confirmed_aug2022,,event duration,not until August 2022,Sec. 5.4 (alternative front confirmed working),lit/bocovich2024_usenixsec24.pdf,True,16.0
+Bocovich2024,tm_stun_port_block,,event label,"Testing revealed blocking of the default STUN port, UDP 3478",Sec. 5.4,lit/bocovich2024_usenixsec24.pdf,True,16.0
+Bocovich2024,dtls_defenses_reactive,,context,are reactive rather than proactive,Sec. 3 (DTLS fingerprinting defenses),lit/bocovich2024_usenixsec24.pdf,True,8.0
+ours (from Bocovich2024 points),hours_to_50pct_overlap_linear_interp,19.4,hours,,linear interpolation between the published 12 h (68.8%) and 24 h (38.2%) overlaps; not a number stated in the paper,,,

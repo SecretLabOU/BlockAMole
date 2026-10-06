@@ -1,0 +1,19 @@
+scenario,censor,label,bound,E_D_a_seconds,E_D_a,rows,lambda_a_dimless_tau_5 min,lambda_a_dimless_tau_1 h,lambda_a_dimless_tau_1 d,mu_over_lambda_a_rot_60 s,mu_over_lambda_a_rot_5 min,mu_over_lambda_a_rot_1 h,max_rotation_interval_n1_a0.95,max_rotation_interval_n2_a0.95,max_rotation_interval_n4_a0.95,max_rotation_interval_n8_a0.95
+gfw_tor_dpi_probe,GFW,"DPI + active-probe confirmable (Tor, 2012-2018)",lo,1.0,1 s,G01;G03;G04,300.0,3600.0,86400.0,0.016666666666666666,0.0033333333333333335,0.0002777777777777778,0.0526 s,0.288 s,0.897 s,2.2 s
+gfw_tor_dpi_probe,GFW,"DPI + active-probe confirmable (Tor, 2012-2018)",central,60.0,1 min,G01;G03;G04,5.0,60.0,1440.0,1.0,0.2,0.016666666666666666,3.16 s,17.3 s,53.8 s,2.2 min
+gfw_tor_dpi_probe,GFW,"DPI + active-probe confirmable (Tor, 2012-2018)",hi,300.0,5 min,G01;G03;G04,1.0,12.0,288.0,5.0,1.0,0.08333333333333333,15.8 s,1.44 min,4.49 min,11 min
+gfw_shadowsocks,GFW,Shadowsocks (2019-2020),lo,60.0,1 min,G05;G06;G07;G08,5.0,60.0,1440.0,1.0,0.2,0.016666666666666666,3.16 s,17.3 s,53.8 s,2.2 min
+gfw_shadowsocks,GFW,Shadowsocks (2019-2020),central,nan,n/a,G05;G06;G07;G08,nan,nan,nan,nan,nan,nan,n/a,n/a,n/a,n/a
+gfw_shadowsocks,GFW,Shadowsocks (2019-2020),hi,inf,inf,G05;G06;G07;G08,0.0,0.0,0.0,inf,inf,inf,inf,inf,inf,inf
+gfw_published_directory,GFW,"unit listed in a public directory (Tor consensus, 2018)",lo,600.0,10 min,G26,0.5,6.0,144.0,10.0,2.0,0.16666666666666666,31.6 s,2.88 min,8.97 min,22 min
+gfw_published_directory,GFW,"unit listed in a public directory (Tor consensus, 2018)",central,600.0,10 min,G26,0.5,6.0,144.0,10.0,2.0,0.16666666666666666,31.6 s,2.88 min,8.97 min,22 min
+gfw_published_directory,GFW,"unit listed in a public directory (Tor consensus, 2018)",hi,600.0,10 min,G26,0.5,6.0,144.0,10.0,2.0,0.16666666666666666,31.6 s,2.88 min,8.97 min,22 min
+gfw_published_release,GFW,"unit shipped in public software (default bridges, 2015-16)",lo,172800.0,2 d,G27;G29,0.001736111111111111,0.020833333333333332,0.5,2880.0,576.0,48.0,2.53 h,13.8 h,1.79 d,4.4 d
+gfw_published_release,GFW,"unit shipped in public software (default bridges, 2015-16)",central,950400.0,11 d,G27;G29,0.0003156565656565657,0.003787878787878788,0.09090909090909091,15840.0,3168.0,264.0,13.9 h,3.17 d,9.87 d,24.2 d
+gfw_published_release,GFW,"unit shipped in public software (default bridges, 2015-16)",hi,3110400.0,36 d,G27;G29,9.645061728395061e-05,0.0011574074074074073,0.027777777777777776,51840.0,10368.0,864.0,1.89 d,10.4 d,32.3 d,79.3 d
+tspu_field_report,TSPU,"Outline server, field report (2022)",lo,300.0,5 min,T01,1.0,12.0,288.0,5.0,1.0,0.08333333333333333,15.8 s,1.44 min,4.49 min,11 min
+tspu_field_report,TSPU,"Outline server, field report (2022)",central,600.0,10 min,T01,0.5,6.0,144.0,10.0,2.0,0.16666666666666666,31.6 s,2.88 min,8.97 min,22 min
+tspu_field_report,TSPU,"Outline server, field report (2022)",hi,900.0,15 min,T01,0.3333333333333333,4.0,96.0,15.0,3.0,0.25,47.4 s,4.32 min,13.5 min,33 min
+iran_public_bridges,Iran,public default Tor bridges (2015-2017),lo,inf,inf,I05;I06,0.0,0.0,0.0,inf,inf,inf,inf,inf,inf,inf
+iran_public_bridges,Iran,public default Tor bridges (2015-2017),central,inf,inf,I05;I06,0.0,0.0,0.0,inf,inf,inf,inf,inf,inf,inf
+iran_public_bridges,Iran,public default Tor bridges (2015-2017),hi,inf,inf,I05;I06,0.0,0.0,0.0,inf,inf,inf,inf,inf,inf,inf

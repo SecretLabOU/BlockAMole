@@ -1,0 +1,10 @@
+# Python packages of the four data pipelines, pinned to the versions of the
+# paper's runs (Python 3.13.7). numpy, pandas and matplotlib are used by the
+# analysis.py scripts of burn_units, snowflake and minting, and requests by
+# every fetch script. data/literature/analysis.py needs only the standard
+# library and pdftotext. The pipelines also need git and pdftotext from
+# poppler-utils (see README.md in the repository root).
+numpy==2.2.4
+pandas==3.0.6
+matplotlib==3.10.1
+requests==2.32.3

@@ -1,3 +1,12 @@
-numpy>=1.22
-scipy>=1.8
-matplotlib>=3.5
+# Python packages imported by the code in this repository, pinned to the
+# versions of the paper's runs (Python 3.13.7). pip installs PyPI builds. The
+# paper's runs used Ubuntu's builds of numpy and scipy (reference BLAS and
+# LAPACK), matplotlib (3.10.1+dfsg1, fontTools 4.55.3) and requests, and
+# pandas from PyPI. Other builds can change the last digits of the exact
+# results and the bytes of the figures, see README.md. simulations/requirements.txt
+# and data/requirements.txt list the packages of each part separately.
+numpy==2.2.4
+scipy==1.15.3
+matplotlib==3.10.1
+pandas==3.0.6
+requests==2.32.3

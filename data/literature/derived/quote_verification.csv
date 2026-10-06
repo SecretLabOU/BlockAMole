@@ -1,0 +1,138 @@
+row_id,source_key,page,mode,extractor,verified,match,also_found_on,quote
+F01,fares2026foci,5,text,pdftotext,True,strict,,but that the more important factor is the arrival rate of proxies relative to users
+F02,fares2026foci,5,text,pdftotext,True,strict,,a minimum of 80K unique proxy IP addresses per day in 2024 compared with an average of approximately 40K users per day.
+F03,fares2026foci,8,text,pdftotext,True,strict,,"In many cases, the simple strategy of recruiting more proxies significantly improved outcomes compared to the more sophisticated mechanisms studied by Nasr et al."
+F04,fares2026foci,4,text,pdftotext,True,strict,,Bocovych et al. [2] found that roughly half of proxies leave the network every 24 hours.
+F05,fares2026foci,6,text,pdftotext,True,strict,,"Overall, we can see that Snowflake effectively deters enumeration attacks, with neither the aggressive nor the optimal censor preventing clients from connecting to proxies."
+F06,fares2026foci,8,text,pdftotext,True,strict,,in practice the system has experienced service outages due to censors blocking flows rather than proxies.
+F07,fares2026foci,6,text,pdftotext,True,strict,,"this is followed by an arrival rate of 10 users/step, 0.75 proxies per step, 10% of censor agents, and a proxy capacity of 40 users."
+G01,ensafi2015imc,6,text,pdftotext,True,strict,,"First, 56% of all probing connections arrived after less than one second (median 552 ms). We conclude that the Chinese censors have abandoned a 15-minute queue and now operate in real time."
+G02,winter2012foci,5,text,pdftotext,True,strict,,"We conjecture that the GFC maintains scanning queues. When the DPI boxes discover a potential Tor connection, the IP:port tuple of the suspected bridge is added to a queue. Every 15 minutes, these queues are processed and all IP:port tuples in the queue are being scanned."
+G03,winter2012foci,1,text,pdftotext,True,strict,,"On October 4, 2011 a user reported to the Tor bug tracker that unpublished bridges stop working after only a few minutes when used from within China [17]."
+G04,dunna2018foci,4,text,pdftotext,True,strict,,"Scanning begins almost instantaneously after the Tor connection attempt is made, and after about a minute, the scans completely stop."
+G05,alice2020imc,5,text,pdftotext,True,strict,,More than 20% of first replays arrived within one second; more than 50% within one minute; and more than 75% within 15 minutes.
+G06,alice2020imc,5,text,pdftotext,True,strict,,The shortest delay we observed was 0.28 seconds and the longest was 570 hours.
+G07,alice2020imc,10,text,pdftotext,True,strict,,"Interestingly, although many of our VPSes have been under intensive active probing, only three have been blocked."
+G07+1,alice2020imc,10,text,pdftotext,True,strict,,"Since July 2019, we have been running experiments on 63 vantage points in China, the US, the UK, the Netherlands, and Singapore."
+G08,alice2020imc,11,text,pdftotext,True,strict,,"One is that the blocking of Shadowsocks is controlled by human factors. That is, the GFW may maintain a list of detected or suspected Shadowsocks servers, and it is up to a human decision whether the servers on the list should be blocked or not."
+G09,wu2023usenix,11,text,pdftotext,True,strict,,"This result suggests that the blocking of each connection is independent, with a probability of 26.3%."
+G09+1,wu2023usenix,11,text,pdftotext,True,strict,,"From our 10% Internet scan (Section 6.2), there were 109,489 IP addresses that we label as blocked."
+G10,wu2023usenix,10,text,pdftotext,True,strict,,"Of the 5.5 million processed IPs, 98% of them are unaffected by the GFW’s blocking, suggesting that China is fairly conservative in employing this new censorship."
+G11,wu2023usenix,11,text,pdftotext,True,strict,,"it shows both ASes that are heavily affected (e.g., Alibaba US, Constant) and ones that are not (Akamai, Cloudflare). In addition, some ASes have a mix of affected and not affected prefixes (Amazon, Digital Ocean, Linode)."
+G12,wu2023usenix,7,text,pdftotext,True,strict,,"We find that once this new censorship system blocks a connection, it continues to drop all subsequent TCP packets having the same 3-tuple (client IP, server IP, server port) for 120 or 180 seconds."
+G13,wu2023usenix,2,text,pdftotext,True,strict,,"We estimate that, if applied broadly, it could potentially block about 0.6% of normal Internet traffic as collateral damage."
+G14,ensafi2015popets,10,layout,pdftotext -layout,True,strict,,"CN Tor−Relay 116,460 (81.52) 555 (0.39) 786 (0.55) 25,061 (17.54)"
+G15,ensafi2015popets,10,text,pdftotext,True,strict,,This shows that No-packets-dropped cases generally happen in bursts of hours.
+G16,dunna2018foci,3,text,pdftotext,True,strict,,"We observe a small number, less than 0.2%, of pings do make it through the GFW, but we note that this occurs very infrequently and we do not observe any trends in these successful pings."
+G17,ensafi2015imc,6,text,pdftotext,True,strict,,"We find that although Tor is mostly blocked, Tor clients succeed in connecting roughly every 25 hours."
+G18,dunna2018foci,4,text,pdftotext,True,strict,,"we observe the bridge relay is blocked for 12 hours after it is scanned. After 12 hours, the bridge is scanned again and becomes accessible if the Tor service is no longer running."
+G19,dunna2018foci,4,text,pdftotext,True,strict,,"We also notice that if we attempt a Tor connection sometime during the block to any of the blocked bridges, the block duration renews to 12 hours from the last attempted Tor connection."
+G20,winter2012foci,3,text,pdftotext,True,strict,,"This observation shows that once a Tor bridge has been blocked, it only remains blocked if Chinese scanners are able to continuously connect to the bridge. If they cannot, the block is removed."
+G20+1,winter2012foci,3,text,pdftotext,True,strict,,"After approximately 12 hours, the Tor process behind port 23941 (which appeared to be unreachable to the GFC) became reachable again whereas connections to port 27418 still timed out and continued to do so."
+G21,alice2020imc,11,text,pdftotext,True,strict,,One of our servers became unblocked more than a week after being blocked.
+G22,ensafi2015imc,4,text,pdftotext,True,strict,,"Since the GFW blocks by IP:port tuple, not just IP address [32], the GFW interpreted every single port in the range as a distinct Tor bridge and probed them separately."
+G23,fifield2016foci,5,text,pdftotext,True,strict,,"We found that blocking in China was keyed on both IP address and port, consistent with an observation of Winter and Lindskog in 2012 [18]."
+G24,dunna2018foci,4,text,pdftotext,True,strict,,the firewall blocks the IP address completely regardless. This highlights the potential collateral damage if Tor bridge relays are hosted in cloud computing facilities where they may be colocated with Web services.
+G25,alice2020imc,10,text,pdftotext,True,strict,,"Some were blocked by dropping all traffic from a specific server port (block by port), and some by dropping traffic from all ports (block by IP address)."
+G26,dunna2018foci,3,text,pdftotext,True,strict,,"We find that on average, our published relays are added to an IP blacklist after 10 minutes."
+G27,fifield2016foci,5,text,pdftotext,True,strict,,"Across the five batches, we observed blocking delays of 7, 2, 18, 11, and 36 days after the first public release, and up to 57 days after the filing of the first ticket, when bridges were potentially first discoverable."
+G28,fifield2016foci,5,text,pdftotext,True,strict,,"When a batch contained more than one bridge, all were blocked at once (within our probing period of 20 minutes)."
+G28+1,fifield2016foci,5,text,pdftotext,True,strict,,Tor Browser 5.5/6.0a1: 6 new bridges
+G29,fifield2017arxiv,5,text,pdftotext,True,strict,,"In our first six batches, we observed blocking delays of 7, 2, 18, 10, 35, and 6 days after the first public release, and up to 57 days after the filing of the first ticket, when bridges were potentially first discoverable."
+G30,fifield2017arxiv,9,text,pdftotext,True,strict,,"Rather than wait until after a release to block bridges, it started blocking them after a ticket was merged (before release)."
+G31,zohaib2025usenix,3,text,pdftotext,True,strict,,"We show that the GFW blocks QUIC connections based on client Initial SNI, regardless of the server IP address."
+G32,zohaib2025usenix,2,text,pdftotext,True,strict,,"Despite QUIC handshake packets being encrypted, the Great Firewall of China (GFW) has begun blocking QUIC connections to specific domains since April 7, 2024."
+G33,zohaib2025usenix,3,text,pdftotext,True,strict,,the GFW drops subsequent packets from the client to server for 3 minutes (Figure 1).
+G34,zohaib2025usenix,9,text,pdftotext,True,strict,,"On a weekly basis, we found that the GFW blocked an average of 43.8K FQDNs from the Tranco list (Figure 6). Over the full duration of our experiments, we observed that the GFW blocked 58,207 unique FQDNs from the Tranco list (Table 4)."
+G34+1,zohaib2025usenix,9,text,pdftotext,True,strict,,"6,955,968 1,489,967 58,207 38,451"
+G34+2,zohaib2025usenix,9,text,pdftotext,True,strict,,"Notably, a substantial number of googlevideo.com subdomains (35,443) appeared on the blocklist, suggesting a broader blocking rule targeting *.googlevideo.com"
+G35,zohaib2025usenix,9,text,pdftotext,True,strict,,"For our tested Tranco list domains, DNS blocking affected the largest number of domains (106,973), followed by HTTP (105,488) and HTTPS (102,216). The QUIC blocklist was notably smaller, containing approximately 55 percent the number of domains compared to the other three blocklists."
+G36,zohaib2025usenix,15,text,pdftotext,True,strict,,but users’ custom domains used for Hysteria proxies are also blocked.
+G37,zohaib2025usenix,9,text,pdftotext,True,strict,,Since the blocking rate during this time is observed to be at least 50% for our connections
+G38,zohaib2025usenix,7,text,pdftotext,True,strict,,"there is a clear diurnal pattern across all three cities, with blocking percentages peaking during early morning hours and dropping to the lowest levels during the day."
+G39,hoang2021usenix,2,text,pdftotext,True,strict_nohyphen,,"We present the results of running GFWatch over a nine-month period, during which we tested an average of 411M domains per day and detected a total of 311K domains censored by GFW’s DNS filter."
+G40,hoang2021usenix,2,text,pdftotext,True,strict,,"We further reverse engineer regular expressions used by the GFW and find 41K innocuous domains that match these filters, resulting in overblocking of their content."
+G41,hoang2021usenix,5,text,pdftotext,True,strict,,"As of December 31st, 126K base domains are still being censored."
+G41+1,hoang2021usenix,5,text,pdftotext,True,strict,,We discovered a total of 138.7K base domains from the set of 311K censored domains.
+G42,hoang2021usenix,11,text,pdftotext,True,strict,,the GFW can successfully poison more than 99.9% of all resolutions that carry censored domains
+G43,wu2025sp,11,text,pdftotext,True,strict,,"While 75% of blocked domains were censored for fewer than 51 days by the Henan Firewall, more than 50% of the domains ever censored by the GFW were blocked during the entire measurement period (256 days). Domains blocked by the GFW had longer censorship durations (mean: 173.8 days; median: 256 days) compared to those blocked by the Henan Firewall (mean: 35.7 days; median: 21 days)."
+G44,dunna2018foci,4,text,pdftotext,True,strict,,"Similar to published relays, we observe that an initial connection attempt is blocked using a TCP reset packet"
+G44+1,dunna2018foci,4,text,pdftotext,True,strict,,and after some amount of time the bridge is completely blocked.
+G45,ensafi2015imc,2,text,pdftotext,True,strict,,"Motivated by reports that China was blocking Tor bridges only minutes after their first use from within China, he investigated and observed the GFW performing active probing"
+G46,fifield2016foci,1,text,pdftotext,True,strict,,"China’s national firewall blocked new bridges after a varying delay of between 2 and 36 days. Blocking occurred only after end-user software releases, despite bridges being potentially discoverable earlier through other channels. While the firewall eventually discovered the bridges of Tor Browser, those that appeared only in Orbot, a version of Tor for mobile devices, remained unblocked."
+G47,fifield2016foci,6,text,pdftotext,True,strict,,"suggest a blocking procedure that is part manual and part automatic: a manual process discovers bridges after an unpredictable delay; then a periodic, automatic process causes the blocks to take effect."
+G48,alice2020imc,10,text,pdftotext,True,strict,,"The servers running Shadowsocks are usually dedicated solely to circumvention, and do not host other services that the censor cares to keep accessible, so there is little harm to the censor in blocking the server entirely."
+G49,dunna2018foci,6,text,pdftotext,True,strict,,"We find that the firewall blocks relay IPs through DPI, and to minimize collateral damage, purges these IPs when they are detected as no longer running Tor."
+G50,wu2023usenix,3,text,pdftotext,True,strict,,"Possibly to mitigate over-blocking caused by false positives, our Internet scans show that the GFW strategically only monitors 26% of connections and only to specific IP ranges of popular data centers."
+G51,zohaib2025usenix,15,text,pdftotext,True,strict,,"We discovered that the subdomain used for MASQUE was blocked by the GFW, disrupting the VPN client’s startup handshake."
+G52,hoang2021usenix,6,text,pdftotext,True,strict,,Only 1.3% of them are among the top 100K most popular domains
+H01,wu2025sp,12,text,pdftotext,True,strict,,"During the experiment, the Henan Firewall blocked 4,196,532 domains—more than five times the 741,542 domains ever blocked by the GFW."
+H02,wu2025sp,11,text,pdftotext,True,strict,,"In 2024, Henan blocked all 5,334 *.com.au domains we tested on Jan 19 and Feb 1–2, all 2,075 *.co.za domains Feb 15–Mar 4, and all 1,547 *.org.uk domains Feb 8–Mar 4."
+H03,wu2025sp,10,text,pdftotext,True,strict,,"The Henan Firewall frequently added and removed generic second-level domain blocking rules (e.g. *.com.au, *.net.br, *.gov.co), causing dramatic changes in the number of blocked domains."
+H04,wu2025sp,1,text,pdftotext,True,strict,,"Contrasting the GFW that monitors and blocks traffic leaving and entering the country, this regional firewall only censors traffic exiting the province (Section 4.2)."
+I01,bock2020foci,3,text,pdftotext,True,strict,,"Over all ten experiments, 3,595 IP addresses (17.9%) tripped the filter at least eight times."
+I01+1,bock2020foci,3,text,pdftotext,True,strict,,"Of those, 3,499 were affected all ten times (17.4%), and 278 (1.4%) IP addresses were affected 3–7 times."
+I02,bock2020foci,4,text,pdftotext,True,strict,,We found that only two of Cloudflare’s prefixes contained IP addresses that are affected by the filter: 104.18.0.0/16 and 104.31.82.0/24.
+I03,bock2020foci,3,text,pdftotext,True,strict,,"We find that, once tripped, the filter will continue to drop the offending flow’s network traffic for 60 seconds, but each time an additional packet is sent in a flow, the 60 second timer resets."
+I04,bock2020foci,2,text,pdftotext,True,strict,,"We find that Iran’s protocol filter affects only TCP traffic, and only on ports 53 (commonly DNS), 80 (commonly HTTP), and 443 (commonly HTTPS)."
+I05,fifield2016foci,5,text,pdftotext,True,strict,,We found no blocking at all of the default bridges from our site in Iran.
+I06,fifield2017arxiv,5,text,pdftotext,True,strict,,"In Iran, we did not see any blocking of bridges; all of them were reachable all the time—though what we discovered in Kazakhstan means that there may have been blocking that TCP reachability tests would not detect."
+I07,bocovich2024usenix,11,text,pdftotext,True,strict,,"Two weeks later, on 2022-10-04, usage dropped almost as quickly as it had risen—the cause was the blocking, in Iran, of a TLS fingerprint used by the Snowflake client."
+I08,chen2026arxiv,2,text,pdftotext,True,strict,,"during the June 2025 Iran shutdown shifted attacker visibility toward a smaller, more stable, and more infrastructure-heavy subset of proxies"
+N01,nasr2019ndss,8,text,pdftotext,True,strict,,"In our simulator, we define each time unit as one day in the real world. We set the birth interval to 365, therefore, representing 1 year in the real world."
+N02,nasr2019ndss,8,layout,pdftotext -layout,True,strict,,Alive 20 5 10 0.5–7.5
+N02+1,nasr2019ndss,8,layout,pdftotext -layout,True,strict,,World Name µb λb µs λs
+N02+2,nasr2019ndss,8,layout,pdftotext -layout,True,strict,,Static 20 5 2 0
+N02+3,nasr2019ndss,8,layout,pdftotext -layout,True,strict,,Slow 20 5 5 0.1
+N02+4,nasr2019ndss,8,layout,pdftotext -layout,True,strict,,Popular 20 5 20 0.5–10
+N03,nasr2019ndss,11,text,pdftotext,True,strict,,"We see that each ecosystem has an equilibrium point (λ̂s ≈ 3 in our setting); if λs is less than λ̂s , the system will eventually get blocked over time (and the pace of blocking is inversely proportional to λs )."
+N04,nasr2019ndss,11,text,pdftotext,True,strict,,Lesson Five: The rate of adding new proxies to a circumvention system is crucial for its effectiveness. The rate should be based on the capabilities of the censor as well as the circumvention ecosystem.
+N05,nasr2019ndss,12,text,pdftotext,True,strict,,"According to our experiments and analysis, no distribution algorithm can protect proxies from the censoring agents as long as there is no influx of new proxies."
+N06,nasr2019ndss,12,text,pdftotext,True,strict,,the rate of new bridges in Tor should be proportional to the ratio of the censoring agents (which is valid for any proxy system).
+S01,bocovich2024usenix,12,text,pdftotext,True,strict,,It takes about 20 hours for 50% of the proxy pool to turn over.
+S02,bocovich2024usenix,12,text,pdftotext,True,strict,,"Churn determines how hard a censor would have to work to keep a blocklist of proxy IP addresses up to date; or alternatively, how quickly a momentarily complete blocklist would lose effectiveness."
+S03,bocovich2024usenix,5,text,pdftotext,True,strict,,"A censor cannot easily block domain-fronted rendezvous without also blocking unrelated connections to the front domain, which should be selected to have high value to the censor."
+S04,bocovich2024usenix,13,text,pdftotext,True,strict,,Snowflake is blockable by any censor that is willing to block WebRTC.
+S05,bocovich2024usenix,14,text,pdftotext,True,strict,,"Though no sustained blocking is evident, disruption of domain fronting rendezvous for three days in May 2023 briefly depressed user numbers."
+S06,chen2026arxiv,1,text,pdftotext,True,strict,,"Over 48 days of real-world measurements from May–June 2025, our attack enumerated over 21,000 unique proxy IP addresses belonging to almost 1,000 autonomous systems."
+S07,chen2026arxiv,8,text,pdftotext,True,strict,,"blocking the top 1% of most frequent ASes already covers 30.1% of restricted proxies and 30.9% of unrestricted proxies, while blocking 0% of the Tranco Top 100 domains, 1.55% of the Top 10K domains, and 2.45% of the"
+S08,chen2026arxiv,9,text,pdftotext,True,strict,,"Once major infrastructure ASes enter the blocklist, collateral rises abruptly. For example, adding ASN 16509 (AMAZON-02) raises Top 100 collateral from 1.37% to 5.48%, and adding ASN 13335 (CLOUDFLARENET-AS) raises it from 8.22% to 17.81%."
+S09,chen2026arxiv,9,text,pdftotext,True,strict,,"ISP networks account for more than 80% of observed proxies while inducing very little domain collateral (<10% across all domain ranks) as shown in Figure 6, whereas hosting networks contribute far fewer proxies (<15%) but very high collateral (>80% across all domain ranks)."
+S10,chen2026arxiv,5,text,pdftotext,True,strict,,We set the default base proxy churn rate as 2.7% per hour from the results reported in the original Snowflake study [10].
+S11,chen2026arxiv,8,text,pdftotext,True,strict,,"IP-level blocking is disruptive but manageable for Snowflake clients currently due to high proxy churn. However, AS-level blocking is the real threat in deployment, driving retry burden for clients into the thousands."
+S12,chen2026arxiv,9,text,pdftotext,True,strict,,"More than 50% of observed proxies can be blocked with negligible Top 100 collateral as they are in ISP networks, but the collateral costs increase sharply when the blocklist includes major cloud ASes such as Amazon."
+S13,bocovich2024usenix,2,text,pdftotext,True,strict,,The large and changing pool of proxy addresses resists enumeration and blocking by a censor.
+S14,bocovich2024usenix,5,text,pdftotext,True,strict,,Both the main circumvention channel and the rendezvous must resist blocking: the combination is only as strong as the weaker of the two.
+T01,bbs111,issue body (2022-03-27),html,embedded JSON (react-app.embeddedData),True,strict,,1. Connecting to Outline Server 2. Do some web surfing for 5-15 minutes 3. Server IP banned (none of ports are working and ip is not accessible) 4. Wait 15 minutes 5. Server IP unbanned
+T01+1,bbs111,issue body (2022-03-27),html,embedded JSON (react-app.embeddedData),True,strict,,Seems that Outline server is not accessible for around of 15 minutes by client (client ip address was connected to Outline server).
+T01+2,bbs111,issue body (2022-03-27),html,embedded JSON (react-app.embeddedData),True,strict,,Cloud Provider - SwissMade Host Tried with every ISP Provider in Russia
+T02,xue2022imc,3,text,pdftotext,True,strict,,"Indeed, all data center VPSes we rent show little to no signs of censorship, while all three residential vantage points we own experience heavy censorship."
+T03,xue2022imc,11,text,pdftotext,True,strict,,"In total, out of 4,005,138 endpoints from 4,986 ASes that we checked, 1,013,600 (25.31%) endpoints from 650 ASes showed TSPU-like IP fragmentation behavior, suggesting that this new TSPU system has already achieved significant deployment within Russia."
+T03+1,xue2022imc,11,text,pdftotext,True,strict,,Limitations: We note that the results and estimates we provide in this section are likely lower bounds.
+T03+2,xue2022imc,11,text,pdftotext,True,strict,,this corroborates existing evidence that the TSPU specifically target residential networks while data centers may be exempted from it.
+T04,xue2022imc,6,layout,pdftotext -layout,True,strict,,ERTelecom N/A 1.76% 2.19% 0.93% 0.045%
+T04+1,xue2022imc,6,layout,pdftotext -layout,True,strict,,SNI-I SNI-II SNI-IV QUIC IP-Based
+T04+2,xue2022imc,6,layout,pdftotext -layout,True,strict,,Rostelecom 0.084% 0.0025% 0.27% 0.02% 0.00%
+T04+3,xue2022imc,6,layout,pdftotext -layout,True,strict,,OBIT 0.14% 0.005% 0.04% 0.00% 0.02%
+T05,xue2022imc,3,text,pdftotext,True,strict,,"While the Tor node is no longer in operation as of March 2022, residual censorship remains in place up until the date of submission of this paper."
+T06,xue2022imc,7,layout,pdftotext -layout,True,strict,,Local.Trigger(SNI- II); SLEEP 420 SNI- II
+T06+1,xue2022imc,7,layout,pdftotext -layout,True,strict,,Local.Trigger(SNI- I); SLEEP 75 SNI- I
+T06+2,xue2022imc,7,layout,pdftotext -layout,True,strict,,Local.Trigger(SNI- IV); SLEEP 40 SNI- IV
+T06+3,xue2022imc,7,layout,pdftotext -layout,True,strict,,Local.Trigger(QUIC); SLEEP 420 QUIC
+T07,xue2022imc,8,text,pdftotext,True,strict,,"while the TSPU blocks the same list of 9,655 domains in all three ISPs."
+T07+1,xue2022imc,8,text,pdftotext,True,strict,,"by randomly sampling 10,000 domain names that have been added to the registry since January 1, 2022."
+T08,xue2022imc,5,text,pdftotext,True,strict,,"Besides the Tor entry node IP, we also found six additional IPs that are being blocked with the same set of behaviors, including IPs from VPN providers and Google services."
+T09,heitmann2026foci,2,text,pdftotext,True,strict_nohyphen,,"On March 4, 2022, users first reported that Russia enabled QUIC-specific censorship by dropping all international QUIC traffic [37]."
+T09+1,heitmann2026foci,2,text,pdftotext,True,strict,,This is corroborated by QUIC traffic from Russia to Cloudflare dropping 46% [13] compared to HTTP over TLS/TCP a few days earlier [38]
+T10,heitmann2026foci,1,text,pdftotext,True,strict,,"We identify that Russian TSPU devices switched to SNI-dependent QUIC censorship on a large scale between May 2022 and July 2023, a fact that went largely unnoticed for three years."
+T11,heitmann2026foci,3,text,pdftotext,True,strict,,"We determined that Russia censored TLS through packet dropping for 2,644 domains."
+T11+1,heitmann2026foci,3,text,pdftotext,True,strict,,Our results are highly consistent with blocklists for TLS and QUIC being equal.
+T12,heitmann2026foci,3,text,pdftotext,True,strict,,"We determined that Russian QUIC censorship employs residual censorship on the 4-tuple (src IP, src port, dst IP, dst port) for 420 seconds—sending additional messages resets the timer."
+T13,heitmann2026foci,3,text,pdftotext,True,strict,,The variance indicates that both the network and the Russian QUIC censorship are unreliable.
+T14,chen2026arxiv,1,text,pdftotext,True,strict,,"show that nation-state censors may choose to perform aggressive blocking, even at substantial collateral cost, during periods of political unrest [1]."
+T15,bbs111,comment 1 (2022-03-28T04:45:46Z),html,embedded JSON (react-app.embeddedData),True,strict,,The fact that the server is blocked after a variable delay of up to 15 minutes is interesting.
+T16,bbs111,comment 2 (2022-03-28T06:03:40Z),html,embedded JSON (react-app.embeddedData),True,strict,,"Considering Russia has not been observed to use active probing before, we lean towards a traffic analysis based approach."
+T17,bbs111,comment 9 (2022-03-31T17:15:09Z),html,embedded JSON (react-app.embeddedData),True,strict,,- MTS (mobile) - Yota - Megafon (mobile) - DOM.RU (ER Telecom) - Rostelecom
+T18,heitmann2026foci,3,text,pdftotext,True,strict,,"we suspect that Russia lifted its broad QUIC filter on June 3, 2022."
+T18+1,heitmann2026foci,3,text,pdftotext,True,strict,,"A third source independently reports it being lifted by July 8, 2023 [12]."
+T19,xue2022imc,4,text,pdftotext,True,strict,,"We note that the Tor instance has not been in operation since March 8, over a month before our remote measurement started, but residual IP blocking remained in place."

@@ -1,0 +1,1841 @@
+{
+ "files": {
+  "antifilter/community_domains.lst": {
+   "content_type": "application/octet-stream",
+   "http_status": 200,
+   "last_modified_header": "Sat, 03 Oct 2026 21:50:03 GMT",
+   "license": "community.antifilter.download: no explicit license; community-voted routing list, NOT registry data",
+   "method": "GET",
+   "notes": "Community-voted domain list.",
+   "retrieved_utc": "2026-10-03T21:57:34Z",
+   "sha256": "1fbb9b3b8862814c84371ff96b59f7b14bd3bcc7462a8396886d222ed8973e94",
+   "size_bytes": 7351,
+   "url": "https://community.antifilter.download/list/domains.lst"
+  },
+  "antifilter/community_index.html": {
+   "content_type": "text/html; charset=UTF-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "community.antifilter.download: no explicit license; community-voted routing list, NOT registry data",
+   "method": "GET",
+   "notes": "Community edition description.",
+   "retrieved_utc": "2026-10-03T21:57:32Z",
+   "sha256": "d697e40592e1931da9635eebaf23945ce33645a7e5ee7f9fd485445ce3d707db",
+   "size_bytes": 2096,
+   "url": "https://community.antifilter.download/"
+  },
+  "antifilter/domains_platform_extract.lst": {
+   "license": "antifilter.download: no explicit license; lists are derived from the Roskomnadzor registry (Government Decree No. 1101 of 2012-10-26)",
+   "method": "GET",
+   "notes": "EXTRACT of antifilter.download domains.lst (registry-blocked domains): only lines whose name is a platform suffix or under one. Full list hashed, filtered, deleted (it names illegal content).",
+   "retrieved_utc": "2026-10-03T21:57:21Z",
+   "sha256": "260d7620118bca8ed84779a8a1b9a4d5ed434b045101370d9f52826ed1679f19",
+   "size_bytes": 558671,
+   "upstream_files": [
+    {
+     "last_modified_header": "Fri, 02 Oct 2026 22:39:16 GMT",
+     "retrieved_utc": "2026-10-03T21:57:21Z",
+     "sha256": "8baa7d2601264b076e89d1e5ffb267b9129775ad0f7ff3741d04eade678bb9a6",
+     "size_bytes": 32420045,
+     "url": "https://antifilter.download/list/domains.lst"
+    }
+   ],
+   "upstream_lines": 1698776,
+   "url": "https://antifilter.download/list/domains.lst"
+  },
+  "antifilter/index.html": {
+   "content_type": "text/html; charset=UTF-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "antifilter.download: no explicit license; lists are derived from the Roskomnadzor registry (Government Decree No. 1101 of 2012-10-26)",
+   "method": "GET",
+   "notes": "Site description of each list (Russian).",
+   "retrieved_utc": "2026-10-03T21:57:19Z",
+   "sha256": "7edb84214a21c806c2523206f5aefca25c25115e65383a8fbb1726fc40bf5908",
+   "size_bytes": 21708,
+   "url": "https://antifilter.download/"
+  },
+  "gfwatch/lookup_appspot_com.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])appspot[.]com$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])appspot[.]com$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:47:39Z",
+   "sha256": "3f59ce364fa991862f31e602d238092428c4d6bc1c664537fba134a850817ac9",
+   "size_bytes": 18207590,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_azurefd_net.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])azurefd[.]net$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])azurefd[.]net$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:51:03Z",
+   "sha256": "3a129fd346754a142da4a6d5d9ead0d4ab6f48d1b8c9cd1a3a3039e71a8285fc",
+   "size_bytes": 1014,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_azurewebsites_net.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])azurewebsites[.]net$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])azurewebsites[.]net$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:50:27Z",
+   "sha256": "270d714de85c3037722f0e86bf4acf767a32d06ac3ad4e2fa0c1386e7040c792",
+   "size_bytes": 12068,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_cloudfront_net.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])cloudfront[.]net$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])cloudfront[.]net$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:49:49Z",
+   "sha256": "22c822354066ad975dd5b3b5519f367196eee4e1d237d4eba5b6bebdf5bab62f",
+   "size_bytes": 50661,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_deno_dev.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])deno[.]dev$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])deno[.]dev$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:53:19Z",
+   "sha256": "30643edabd0cf1ec65be822a51ddef2a71f3fc5f8b5b2bf7789e38a6abdb9520",
+   "size_bytes": 540,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_firebaseapp_com.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])firebaseapp[.]com$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])firebaseapp[.]com$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:49:10Z",
+   "sha256": "f79976bb3cfbe166113a245150a3af425c7a3ffda3fe34b3f42ccbf4c46b3e52",
+   "size_bytes": 1939,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_fly_dev.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])fly[.]dev$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])fly[.]dev$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:54:04Z",
+   "sha256": "49e2f6baae08522c82afc6b2ace9e9180f1f35414c5fe8039d30bc2cccfa7067",
+   "size_bytes": 1560,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_github_io.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])github[.]io$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])github[.]io$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:43:53Z",
+   "sha256": "be2e7426f83f5f56b4e16df756030df1b3399bad98dc9d0cd7d7d88852a10268",
+   "size_bytes": 112537,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_herokuapp_com.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])herokuapp[.]com$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])herokuapp[.]com$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:46:55Z",
+   "sha256": "e34ce9f6f949b46495918acd13795d58420a58d7cc4d3691a4551cbbd59ff396",
+   "size_bytes": 35051137,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_netlify_app.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])netlify[.]app$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])netlify[.]app$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:46:12Z",
+   "sha256": "b2fd224a9eae6c64e8caad4cd27fc49b7e4e6c4de8383c3205b6d0d7eee3ec11",
+   "size_bytes": 4276,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_on_aws.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])on[.]aws$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])on[.]aws$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:52:32Z",
+   "sha256": "4904c23cdc00f3de3c4214da794f0f9e2abe4262fa27ebe01b5ad924d5058795",
+   "size_bytes": 258,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_onrender_com.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])onrender[.]com$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])onrender[.]com$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:54:50Z",
+   "sha256": "8e30cc1cdc6377793843aa2337057a73937cf921d3eaf5e890538288b6b4d621",
+   "size_bytes": 1164,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_pages_dev.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])pages[.]dev$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])pages[.]dev$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:42:59Z",
+   "sha256": "ad9f9ed9cd5aae745985e42b6ff72ef60571d45055d1545da1cc115453be50b6",
+   "size_bytes": 2958,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_r2_dev.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])r2[.]dev$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])r2[.]dev$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:56:07Z",
+   "sha256": "d39a11cec57ec42525fc755689cf4de2234b7c3bbbe04243cfdf919e4c9091cc",
+   "size_bytes": 258,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_run_app.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])run[.]app$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])run[.]app$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:51:45Z",
+   "sha256": "5dfbe8ed3d029bf58a0d8054250d11974f1ae1429308af64b6a49da0f6047155",
+   "size_bytes": 259,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_trycloudflare_com.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])trycloudflare[.]com$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])trycloudflare[.]com$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:55:32Z",
+   "sha256": "a8b5589e171f3988549e0bb10f0adce593a3fce800b289bcb1305e720f825b58",
+   "size_bytes": 262,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_vercel_app.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])vercel[.]app$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])vercel[.]app$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:45:24Z",
+   "sha256": "b1e8aff26dbde6345d1fc4a1f3aa6182d82189dacd31b978a0024ddafe880093",
+   "size_bytes": 29522296,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_web_app.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])web[.]app$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])web[.]app$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:48:24Z",
+   "sha256": "f9806353e8dfb92bccdaa0e3f1b8782f6cec8da3b42fdb74b4614a0b1480455f",
+   "size_bytes": 1075,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwatch/lookup_workers_dev.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "GFWatch dashboard (gfwatch.org), Hoang et al. USENIX Security 2021; no explicit license on the dashboard; cite, do not redistribute bulk",
+   "method": "POST",
+   "notes": "GFWatch censored-domains lookup callback, regex '(^|[.])workers[.]dev$'; dataset frozen at 2024-09-06",
+   "request_payload": {
+    "changedPropIds": [
+     "submit-val.n_clicks"
+    ],
+    "inputs": [
+     {
+      "id": "submit-val",
+      "property": "n_clicks",
+      "value": 1
+     }
+    ],
+    "output": "..censored-domains-looked-up.data...censored-domains-looked-up.page_current..",
+    "outputs": [
+     {
+      "id": "censored-domains-looked-up",
+      "property": "data"
+     },
+     {
+      "id": "censored-domains-looked-up",
+      "property": "page_current"
+     }
+    ],
+    "state": [
+     {
+      "id": "censored-domains-lookup",
+      "property": "value",
+      "value": "(^|[.])workers[.]dev$"
+     }
+    ]
+   },
+   "retrieved_utc": "2026-10-03T21:44:41Z",
+   "sha256": "cbc339601c593c8db1d90797e6357581278b6167bc0c313dbb637c72262d551d",
+   "size_bytes": 6306940,
+   "url": "https://gfwatch.org/_dash-update-component"
+  },
+  "gfwlist/gfwlist.bundle": {
+   "git_head": "39e9bcede210515011621dae37b20c16b6d16ed8",
+   "license": "LGPL-2.1 (gfwlist/gfwlist COPYING.txt)",
+   "method": "GET",
+   "notes": "Full history bundle of gfwlist/gfwlist; HEAD master 39e9bcede210515011621dae37b20c16b6d16ed8 (2026-10-02 13:31:39 +0000); 4285 commits, 3929 touch gfwlist.txt (base64 AutoProxy list). Community proxy-routing list: weak proxy for GFW blocking.",
+   "retrieved_utc": "2026-10-03T21:45:10Z",
+   "sha256": "2723d584673d69b27d43823728dd6b46f619b894545029c98868e0974461d06d",
+   "size_bytes": 93933444,
+   "url": "https://github.com/gfwlist/gfwlist (git clone --bare; git bundle create --all)"
+  },
+  "irblock/README.md": {
+   "content_type": "application/octet-stream, application/octet-stream",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC-BY-4.0 (Zenodo record 10.5281/zenodo.15572895)",
+   "method": "GET",
+   "notes": "IRBlock (Tai et al., USENIX Security 2025) artifact file",
+   "retrieved_utc": "2026-10-03T21:48:12Z",
+   "sha256": "523110f96b41a807fd3b56e40392fad9be96508fed9d5b93125ac5c8e43671a0",
+   "size_bytes": 8537,
+   "url": "https://zenodo.org/api/records/15572895/files/README.md/content"
+  },
+  "irblock/blocked_domains.tar.gz": {
+   "content_type": "application/octet-stream, application/octet-stream",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC-BY-4.0 (Zenodo record 10.5281/zenodo.15572895)",
+   "method": "GET",
+   "notes": "IRBlock (Tai et al., USENIX Security 2025) artifact file",
+   "retrieved_utc": "2026-10-03T21:48:14Z",
+   "sha256": "168dd389671853bb9bc7009e55adbc92866ab1ececa549c1fa6255706613e83a",
+   "size_bytes": 69389814,
+   "url": "https://zenodo.org/api/records/15572895/files/blocked_domains.tar.gz/content"
+  },
+  "irblock/zenodo_record_15572895.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC-BY-4.0 (Zenodo record 10.5281/zenodo.15572895)",
+   "method": "GET",
+   "notes": "Zenodo record metadata (file list, md5 checksums)",
+   "retrieved_utc": "2026-10-03T21:48:10Z",
+   "sha256": "e5d916dc84d9a73647223b6219de507ae61a75625d8cbb15289472925e579c0a",
+   "size_bytes": 7382,
+   "url": "https://zenodo.org/api/records/15572895"
+  },
+  "ooni/agg_CN_2026-07-01_2026-08-01_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, web_connectivity, per-domain counts (anomaly/confirmed/failure/ok are mutually exclusive)",
+   "retrieved_utc": "2026-10-03T21:57:48Z",
+   "sha256": "ae50f8157391751b5b74923206530b0d6f01ee21390eaa34f55044df36fc0951",
+   "size_bytes": 19735929,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=CN&test_name=web_connectivity&since=2026-07-01&until=2026-08-01&axis_x=domain"
+  },
+  "ooni/agg_CN_2026-08-01_2026-09-01_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, web_connectivity, per-domain counts (anomaly/confirmed/failure/ok are mutually exclusive)",
+   "retrieved_utc": "2026-10-03T21:57:58Z",
+   "sha256": "ec30cac5f4755c184b0f2225ffccaeacec55a306ae4b7adc7f57c1ec060906c4",
+   "size_bytes": 20412861,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=CN&test_name=web_connectivity&since=2026-08-01&until=2026-09-01&axis_x=domain"
+  },
+  "ooni/agg_CN_2026-09-01_2026-10-01_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, web_connectivity, per-domain counts (anomaly/confirmed/failure/ok are mutually exclusive)",
+   "retrieved_utc": "2026-10-03T21:58:08Z",
+   "sha256": "5523e7437ea3b9be673db3673e3388be5eda3e7bf9f6e69dc345cd1e7d78996c",
+   "size_bytes": 23312018,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=CN&test_name=web_connectivity&since=2026-09-01&until=2026-10-01&axis_x=domain"
+  },
+  "ooni/agg_CN_azurefd40_2025-07-01_2026-05-01_day_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "Same 40 names, earlier window (onset search)",
+   "retrieved_utc": "2026-10-03T22:23:02Z",
+   "sha256": "4cebaa5cadcc9b2cfce3de369e6d5a815d4de856041ffcd8af06fcab82ac418d",
+   "size_bytes": 271943,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=CN&test_name=web_connectivity&since=2025-07-01&until=2026-05-01&domain=rdipowerplatformfd-e5hhgqaahef7fbdr.a02.azurefd.net%2Cp-entitc-frontdoor-endpoint-ecgqa0gseehhf0cr.a02.azurefd.net%2Ciam-prod3-hfg4hab4addda2gf.a02.azurefd.net%2Cp2blobstore-cdata-hya0gqaxdabaarax.a02.azurefd.net%2Cfd-plzconn-cdn-op-msop-frontdoor-premium-fhb4bxgcffamgfbh.a02.azurefd.net%2Cmedia-bkccefdngbaqgdb4.a02.azurefd.net%2Cpictimecloudaf-pub-g3csanfebyefg3dm.a02.azurefd.net%2Cu9kh456577-e4h5bxhbgfencxay.a02.azurefd.net%2Cnd4p776834-ezhnhybmgce7ghga.a02.azurefd.net%2Cbrgfrontdoorendpoint-ftbgdxcqg6dqhnfb.a02.azurefd.net%2Cb169868226-hvcucae9a5f8eagb.a02.azurefd.net%2Ccarrabbasprod-esdja5eaccfgfnc7.a02.azurefd.net%2C9a9f179586-bfffgmekb0buh4cm.a02.azurefd.net%2Cfd-rapp-cdn-fzgxcpehc0ccdxeu.a02.azurefd.net%2Capt-prod-d9d6gsemdedkd3gd.a02.azurefd.net%2Cpictime7eus1public-pub-hdf3hecqdpaqeuev.a02.azurefd.net%2Cvg71233921-h0bndhepaagbfxdm.a02.azurefd.net%2Css-p13n-a-route-cqashxc7gshebahk.a02.azurefd.net%2Cwebcomponents-dub9hvc3eachc4e6.a02.azurefd.net%2Cp62a367490-gwbfhwe4bce2bjhy.a02.azurefd.net%2Contariohealth-gbfed6fje7c8e4bj.a02.azurefd.net%2Cmt-pg1-us-east-1-cdn-e2f3g4ftanc9agcx.a02.azurefd.net%2Cimages-h9gsgmdkgwcrd8dq.a02.azurefd.net%2Carthrexprod-dtd2bphrh2btedff.a02.azurefd.net%2C64v8402753-aaabcecgf7h3dmcd.a02.azurefd.net%2Ctapn916417-b0e3hmg6hqd4b5ep.a02.azurefd.net%2Cecolab-intelligence-fd-p-bxgxhwd3agfqgtbj.a02.azurefd.net%2Crc-d2c-stg-secondary-cdn-frontservicediscovery-h8gxcshuhwcndrcz.a02.azurefd.net%2Cv5ge487810-hze0dbdzeqg4fhbr.a02.azurefd.net%2Ctemplafy-hive-frontdoor-cdn-f3dhb0azaufdckh0.a02.azurefd.net%2Chs-app-endpoint-gnfjfugjaxgta4c6.a02.azurefd.net%2Ccompanyportal-bwhfc4dqb5cqguhr.a02.azurefd.net%2Cstorageprodcdnendpoint-fcazfkcfcpdjbjgg.a02.azurefd.net%2Cendpoint-production-arcsdsccamezhgfe.a02.azurefd.net%2Ctygraphfd-efe2cbaperfhesgt.a02.azurefd.net%2Cvuw2182850-hcfkacagcfgqfzb4.a02.azurefd.net%2Caro-gsa4hgdbd8d0d9e3.a02.azurefd.net%2C36q2444993-dfhhb6eke7gyd3b3.a02.azurefd.net%2Cstorage-prod-f0hmanfcbecneyff.a02.azurefd.net%2Ca02.azurefd.net&axis_x=measurement_start_day&axis_y=domain"
+  },
+  "ooni/agg_CN_azurefd40_2026-05-01_2026-10-01_day_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, CN web_connectivity, 39 Azure Front Door endpoints + zone apex a02.azurefd.net, per day x domain",
+   "retrieved_utc": "2026-10-03T22:21:34Z",
+   "sha256": "dfdec416ba79554eaf5e3896ce41c1cbfa179b87567f0260793d41af85a77834",
+   "size_bytes": 268972,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=CN&test_name=web_connectivity&since=2026-05-01&until=2026-10-01&domain=rdipowerplatformfd-e5hhgqaahef7fbdr.a02.azurefd.net%2Cp-entitc-frontdoor-endpoint-ecgqa0gseehhf0cr.a02.azurefd.net%2Ciam-prod3-hfg4hab4addda2gf.a02.azurefd.net%2Cp2blobstore-cdata-hya0gqaxdabaarax.a02.azurefd.net%2Cfd-plzconn-cdn-op-msop-frontdoor-premium-fhb4bxgcffamgfbh.a02.azurefd.net%2Cmedia-bkccefdngbaqgdb4.a02.azurefd.net%2Cpictimecloudaf-pub-g3csanfebyefg3dm.a02.azurefd.net%2Cu9kh456577-e4h5bxhbgfencxay.a02.azurefd.net%2Cnd4p776834-ezhnhybmgce7ghga.a02.azurefd.net%2Cbrgfrontdoorendpoint-ftbgdxcqg6dqhnfb.a02.azurefd.net%2Cb169868226-hvcucae9a5f8eagb.a02.azurefd.net%2Ccarrabbasprod-esdja5eaccfgfnc7.a02.azurefd.net%2C9a9f179586-bfffgmekb0buh4cm.a02.azurefd.net%2Cfd-rapp-cdn-fzgxcpehc0ccdxeu.a02.azurefd.net%2Capt-prod-d9d6gsemdedkd3gd.a02.azurefd.net%2Cpictime7eus1public-pub-hdf3hecqdpaqeuev.a02.azurefd.net%2Cvg71233921-h0bndhepaagbfxdm.a02.azurefd.net%2Css-p13n-a-route-cqashxc7gshebahk.a02.azurefd.net%2Cwebcomponents-dub9hvc3eachc4e6.a02.azurefd.net%2Cp62a367490-gwbfhwe4bce2bjhy.a02.azurefd.net%2Contariohealth-gbfed6fje7c8e4bj.a02.azurefd.net%2Cmt-pg1-us-east-1-cdn-e2f3g4ftanc9agcx.a02.azurefd.net%2Cimages-h9gsgmdkgwcrd8dq.a02.azurefd.net%2Carthrexprod-dtd2bphrh2btedff.a02.azurefd.net%2C64v8402753-aaabcecgf7h3dmcd.a02.azurefd.net%2Ctapn916417-b0e3hmg6hqd4b5ep.a02.azurefd.net%2Cecolab-intelligence-fd-p-bxgxhwd3agfqgtbj.a02.azurefd.net%2Crc-d2c-stg-secondary-cdn-frontservicediscovery-h8gxcshuhwcndrcz.a02.azurefd.net%2Cv5ge487810-hze0dbdzeqg4fhbr.a02.azurefd.net%2Ctemplafy-hive-frontdoor-cdn-f3dhb0azaufdckh0.a02.azurefd.net%2Chs-app-endpoint-gnfjfugjaxgta4c6.a02.azurefd.net%2Ccompanyportal-bwhfc4dqb5cqguhr.a02.azurefd.net%2Cstorageprodcdnendpoint-fcazfkcfcpdjbjgg.a02.azurefd.net%2Cendpoint-production-arcsdsccamezhgfe.a02.azurefd.net%2Ctygraphfd-efe2cbaperfhesgt.a02.azurefd.net%2Cvuw2182850-hcfkacagcfgqfzb4.a02.azurefd.net%2Caro-gsa4hgdbd8d0d9e3.a02.azurefd.net%2C36q2444993-dfhhb6eke7gyd3b3.a02.azurefd.net%2Cstorage-prod-f0hmanfcbecneyff.a02.azurefd.net%2Ca02.azurefd.net&axis_x=measurement_start_day&axis_y=domain"
+  },
+  "ooni/agg_IR_2024-10-01_2025-10-01_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, web_connectivity, per-domain counts (anomaly/confirmed/failure/ok are mutually exclusive)",
+   "retrieved_utc": "2026-10-03T22:25:11Z",
+   "sha256": "5d64b1223b0a8028a1857df3a0ea89eafa7ac35179d5aeedae0c70ab80009171",
+   "size_bytes": 369870,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=IR&test_name=web_connectivity&since=2024-10-01&until=2025-10-01&axis_x=domain"
+  },
+  "ooni/agg_IR_2025-10-01_2026-10-01_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, web_connectivity, per-domain counts (anomaly/confirmed/failure/ok are mutually exclusive)",
+   "retrieved_utc": "2026-10-03T21:58:19Z",
+   "sha256": "e642cfff8118511151a2d688fd4ef281f49b7c7350ef64a1f2d6b0fc4289819e",
+   "size_bytes": 391032,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=IR&test_name=web_connectivity&since=2025-10-01&until=2026-10-01&axis_x=domain"
+  },
+  "ooni/agg_RU_2024-10-01_2025-10-01_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, web_connectivity, per-domain counts (anomaly/confirmed/failure/ok are mutually exclusive)",
+   "retrieved_utc": "2026-10-03T22:25:24Z",
+   "sha256": "e5509d91905e4f04f602fc490dde48cc853d185461685548935fef413bc297d9",
+   "size_bytes": 463929,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=RU&test_name=web_connectivity&since=2024-10-01&until=2025-10-01&axis_x=domain"
+  },
+  "ooni/agg_RU_2025-10-01_2026-10-01_domain.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI aggregation API, web_connectivity, per-domain counts (anomaly/confirmed/failure/ok are mutually exclusive)",
+   "retrieved_utc": "2026-10-03T21:58:27Z",
+   "sha256": "123bc301b57007d2ed6e1ac0f0bcc74c086ba80446b97aa05511c3e3d7e836b6",
+   "size_bytes": 9192002,
+   "url": "https://api.ooni.io/api/v1/aggregation?probe_cc=RU&test_name=web_connectivity&since=2025-10-01&until=2026-10-01&axis_x=domain"
+  },
+  "ooni/list_CN_azurefd_rdipowerplatformfd_2026-08-01_2026-09-15.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI measurement list for one Azure Front Door endpoint in CN",
+   "retrieved_utc": "2026-10-03T22:22:14Z",
+   "sha256": "60e25ca24034577cb5b01c6a365e6bec1c92e4d19a724cacc76aefd2425ba083",
+   "size_bytes": 13249,
+   "url": "https://api.ooni.io/api/v1/measurements?probe_cc=CN&test_name=web_connectivity&domain=rdipowerplatformfd-e5hhgqaahef7fbdr.a02.azurefd.net&since=2026-08-01&until=2026-09-15&limit=30&order_by=measurement_start_time&order=asc"
+  },
+  "ooni/list_CN_workersdev_blocked_2026-09.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI measurement list (to pick raw measurements)",
+   "retrieved_utc": "2026-10-03T22:24:27Z",
+   "sha256": "28a32a91050da481d5d49c4d874b0ad6cfc1df19070b14e82935d02373a0bf10",
+   "size_bytes": 3961,
+   "url": "https://api.ooni.io/api/v1/measurements?probe_cc=CN&test_name=web_connectivity&domain=cva.engineer-c03.workers.dev&since=2026-09-01&until=2026-10-01&limit=5"
+  },
+  "ooni/list_CN_workersdev_clear_2026-09.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI measurement list (to pick raw measurements)",
+   "retrieved_utc": "2026-10-03T22:24:29Z",
+   "sha256": "e715774c26e7d6e97b3a9e24a1c1d1f3e28c1675ebebd0712908b8c14e0bd891",
+   "size_bytes": 2389,
+   "url": "https://api.ooni.io/api/v1/measurements?probe_cc=CN&test_name=web_connectivity&domain=ancient-bird-0990.isvao15mcrxi.workers.dev&since=2026-09-01&until=2026-10-01&limit=5"
+  },
+  "ooni/raw_20260801153920.708278_CN_webconnectivity_9fd6b6e49bbb4a16.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI raw measurement (published data; not a new measurement)",
+   "retrieved_utc": "2026-10-03T22:22:16Z",
+   "sha256": "848dd553dcd5bdfa54ea1f02b496727cf2a60ad30fb45b96e3929119906ca3ae",
+   "size_bytes": 35850,
+   "url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260801153920.708278_CN_webconnectivity_9fd6b6e49bbb4a16"
+  },
+  "ooni/raw_20260814204453.616266_CN_webconnectivity_9b044dff6f7db0e0.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI raw measurement (published data; not a new measurement)",
+   "retrieved_utc": "2026-10-03T22:22:18Z",
+   "sha256": "bcc500a36022a51cc36c4121f4a7a0a3aa500cfb965f64981954f56d08782505",
+   "size_bytes": 35855,
+   "url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260814204453.616266_CN_webconnectivity_9b044dff6f7db0e0"
+  },
+  "ooni/raw_20260907101803.992549_CN_webconnectivity_4f4b68ede6f7b7fa.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI raw measurement (published data; not a new measurement)",
+   "retrieved_utc": "2026-10-03T22:22:20Z",
+   "sha256": "ddea1c2b9976e36a2da4268fafbfd44009f707e6436a0abed831c9850219182a",
+   "size_bytes": 56233,
+   "url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260907101803.992549_CN_webconnectivity_4f4b68ede6f7b7fa"
+  },
+  "ooni/raw_20260928202308.876948_CN_webconnectivity_af000bcf9372d783.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI raw measurement (published data; not a new measurement)",
+   "retrieved_utc": "2026-10-03T22:24:33Z",
+   "sha256": "29d39a7d1ee5c869e170d19a3e5c0ea61a32db4febe7a0ee64929a474e1c858a",
+   "size_bytes": 4856,
+   "url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260928202308.876948_CN_webconnectivity_af000bcf9372d783"
+  },
+  "ooni/raw_20260929202119.196158_CN_webconnectivity_3d44e33e0974bd1a.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "CC BY-NC-SA 4.0 (OONI data policy); derived data must carry the same license",
+   "method": "GET",
+   "notes": "OONI raw measurement (published data; not a new measurement)",
+   "retrieved_utc": "2026-10-03T22:24:31Z",
+   "sha256": "d7a95b1428953443513afc8f01eaa447a40a7173044a67028b53d558c9d0cb45",
+   "size_bytes": 15017,
+   "url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260929202119.196158_CN_webconnectivity_3d44e33e0974bd1a"
+  },
+  "psl/public_suffix_list.dat": {
+   "content_type": "text/plain; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "MPL-2.0 (Public Suffix List)",
+   "method": "GET",
+   "notes": "Public Suffix List; used to mark which platform suffixes are PSL private-section entries (each tenant = its own registrable domain)",
+   "retrieved_utc": "2026-10-03T21:56:59Z",
+   "sha256": "102b252c18b5f87f4c81f017e75282a82c18e00cd0c2e601b5b02a0f7a601f2c",
+   "size_bytes": 334645,
+   "url": "https://raw.githubusercontent.com/publicsuffix/list/main/public_suffix_list.dat"
+  },
+  "qualitative/net4people_bbs_133.html": {
+   "content_type": "text/html; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "net4people/bbs forum post (GitHub); no explicit license; cite, quote briefly",
+   "method": "GET",
+   "notes": "Qualitative primary report (read, not measured)",
+   "retrieved_utc": "2026-10-03T21:57:42Z",
+   "sha256": "6b85500b75c4898239fe607ee80b1b1b0ba23d5d64a451025e837982fe7d05d3",
+   "size_bytes": 304110,
+   "url": "https://github.com/net4people/bbs/issues/133"
+  },
+  "qualitative/net4people_bbs_417.html": {
+   "content_type": "text/html; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "net4people/bbs forum post (GitHub); no explicit license; cite, quote briefly",
+   "method": "GET",
+   "notes": "Qualitative primary report (read, not measured)",
+   "retrieved_utc": "2026-10-03T21:57:44Z",
+   "sha256": "27314507e5149d0b8e657e732022333b40b3d480c913905ee59b6a2341ff091b",
+   "size_bytes": 377250,
+   "url": "https://github.com/net4people/bbs/issues/417"
+  },
+  "qualitative/tor_gitlab_40064_discussions.json": {
+   "content_type": "application/json; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "Tor Project GitLab issue comments; no explicit license; cite, quote briefly",
+   "method": "GET",
+   "notes": "Qualitative primary report (read, not measured); sent the cookie _gitlab_session=1 that the site's 403 page sets",
+   "retrieved_utc": "2026-10-03T22:01:23Z",
+   "sha256": "64a1606c0ac3eddbeec8ec5302650f3bc7b21c5e44d013ee3c4095ba08a14a3b",
+   "size_bytes": 250224,
+   "url": "https://gitlab.torproject.org/tpo/anti-censorship/censorship-analysis/-/issues/40064/discussions.json"
+  },
+  "qualitative/tor_gitlab_40064_issue.json": {
+   "content_type": "application/json",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "Tor Project GitLab issue body; no explicit license; cite, quote briefly",
+   "method": "GET",
+   "notes": "Qualitative primary report (read, not measured)",
+   "retrieved_utc": "2026-10-03T21:57:40Z",
+   "sha256": "de7824b2000391ba68d855d7670fd07813996ec9b04dd3545f4d3d6e8235402f",
+   "size_bytes": 2309,
+   "url": "https://gitlab.torproject.org/api/v4/projects/tpo%2Fanti-censorship%2Fcensorship-analysis/issues/40064"
+  },
+  "tranco/tranco_2024-09-01_4Q6GX_top1m.csv": {
+   "content_type": "text/csv; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": "Sat, 03 Oct 2026 21:57:02 GMT",
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco daily top-1M, list 4Q6GX (config: {\"isDailyList\": true, \"filterTLD\": \"false\", \"combinationMethod\": \"dowdall\", \"providers\": [\"crux\", \"farsight\", \"majestic\", \"radar\", \"umbrella\"], \"startDate\": \"2024-08-03\", \"filterPLD\": \"on\", \"listPrefix\": \"1000000\", \"endDate\": \"2024-09-01\"})",
+   "retrieved_utc": "2026-10-03T21:57:01Z",
+   "sha256": "df7dc54be4d2a738ba345d20881dcd7a189046aef6a8462fa7b5b69eadf9901e",
+   "size_bytes": 22584082,
+   "url": "https://tranco-list.eu/download/4Q6GX/1000000"
+  },
+  "tranco/tranco_2024-09-01_meta.json": {
+   "content_type": "application/json; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco list id for 2024-09-01",
+   "retrieved_utc": "2026-10-03T21:56:59Z",
+   "sha256": "5816bb96a368adf35b03240fea820f45a60b7bd5313be19a5e837eaebf4d687f",
+   "size_bytes": 419,
+   "url": "https://tranco-list.eu/api/lists/date/2024-09-01"
+  },
+  "tranco/tranco_2025-01-01_24LY9_top1m.csv": {
+   "content_type": "text/csv; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": "Sat, 03 Oct 2026 21:57:06 GMT",
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco daily top-1M, list 24LY9 (config: {\"isDailyList\": true, \"filterTLD\": \"false\", \"combinationMethod\": \"dowdall\", \"providers\": [\"crux\", \"farsight\", \"majestic\", \"radar\", \"umbrella\"], \"startDate\": \"2024-12-03\", \"filterPLD\": \"on\", \"listPrefix\": \"1000000\", \"endDate\": \"2025-01-01\"})",
+   "retrieved_utc": "2026-10-03T21:57:05Z",
+   "sha256": "d871c6c9c083c4eca55f1cb0e5c053b92e64cf05e3e908396a37de916d24a457",
+   "size_bytes": 22664230,
+   "url": "https://tranco-list.eu/download/24LY9/1000000"
+  },
+  "tranco/tranco_2025-01-01_meta.json": {
+   "content_type": "application/json; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco list id for 2025-01-01",
+   "retrieved_utc": "2026-10-03T21:57:03Z",
+   "sha256": "5ec598bc42cabfc73e1290cc0a15ac59e1fcccf3647aa11f2f3e017492688666",
+   "size_bytes": 419,
+   "url": "https://tranco-list.eu/api/lists/date/2025-01-01"
+  },
+  "tranco/tranco_2025-10-01_9WZV2_top1m.csv": {
+   "content_type": "text/csv; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": "Sat, 03 Oct 2026 21:57:10 GMT",
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco daily top-1M, list 9WZV2 (config: {\"isDailyList\": true, \"filterTLD\": \"false\", \"combinationMethod\": \"dowdall\", \"providers\": [\"crux\", \"farsight\", \"majestic\", \"radar\", \"umbrella\"], \"startDate\": \"2025-09-02\", \"filterPLD\": \"on\", \"listPrefix\": \"1000000\", \"endDate\": \"2025-10-01\"})",
+   "retrieved_utc": "2026-10-03T21:57:09Z",
+   "sha256": "8f2cee5e6531cb62a3fb44506216601d3d25cdd12a5cb6d0dd294e64f804ad89",
+   "size_bytes": 22247335,
+   "url": "https://tranco-list.eu/download/9WZV2/1000000"
+  },
+  "tranco/tranco_2025-10-01_meta.json": {
+   "content_type": "application/json; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco list id for 2025-10-01",
+   "retrieved_utc": "2026-10-03T21:57:07Z",
+   "sha256": "e9f41f63848787914bf0275c52108cd46b6407bcf18e80450721ee41f9c6f80a",
+   "size_bytes": 419,
+   "url": "https://tranco-list.eu/api/lists/date/2025-10-01"
+  },
+  "tranco/tranco_2026-10-01_Y83YG_top1m.csv": {
+   "content_type": "text/csv; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": "Fri, 02 Oct 2026 22:47:17 GMT",
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco daily top-1M, list Y83YG (config: {\"isDailyList\": true, \"filterTLD\": \"false\", \"combinationMethod\": \"dowdall\", \"providers\": [\"crux\", \"farsight\", \"majestic\", \"radar\", \"umbrella\"], \"startDate\": \"2026-09-02\", \"filterPLD\": \"on\", \"listPrefix\": \"1000000\", \"endDate\": \"2026-10-01\"})",
+   "retrieved_utc": "2026-10-03T21:57:18Z",
+   "sha256": "b3f7246defc90158d80324b59c75fb78cf7bf0ed1d2f11a1279caf88e5a6a7c0",
+   "size_bytes": 22604258,
+   "url": "https://tranco-list.eu/download/Y83YG/1000000"
+  },
+  "tranco/tranco_2026-10-01_meta.json": {
+   "content_type": "application/json; charset=utf-8",
+   "http_status": 200,
+   "last_modified_header": null,
+   "license": "Tranco list (Le Pochat et al., NDSS 2019), tranco-list.eu; free for research, no explicit license; cite",
+   "method": "GET",
+   "notes": "Tranco list id for 2026-10-01",
+   "retrieved_utc": "2026-10-03T21:57:16Z",
+   "sha256": "63e891621c9ddd71e6daeaf878d7e02598c7ee3b3ec400645501b5230a6b76f7",
+   "size_bytes": 419,
+   "url": "https://tranco-list.eu/api/lists/date/2026-10-01"
+  },
+  "zi/extract_2025-10-01_9133e4327b.csv": {
+   "git_commit": "9133e4327bbcf9adc1cba24360f50e50a6b4d11c",
+   "license": "No license file in zapret-info/z-i; Roskomnadzor registry dump (public under Decree 1101). Extract only; do not redistribute.",
+   "method": "GET",
+   "notes": "EXTRACT of the 20 split files at commit 9133e4327bbcf9adc1cba24360f50e50a6b4d11c ('Updated: 2025-10-01 10:25:04 +0000'): only entries whose domain or URL host is under a platform suffix (platform, field, value, decision_date). Upstream files hashed, filtered, deleted.",
+   "retrieved_utc": "2026-10-03T22:12:49Z",
+   "sha256": "1e74dfe5340a25c191d23e270a95663d2f973baa6597350de3c2e5c002456cc0",
+   "size_bytes": 1013323,
+   "upstream_files": [
+    {
+     "retrieved_utc": "2026-10-03T22:12:49Z",
+     "sha256": "c16659dfdf017a0e900ce99c595f8c54134b26180e107b5f5c691c85cce53dc4",
+     "size_bytes": 12033030,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-00.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:12:51Z",
+     "sha256": "4e5d7ff353f3fcd86ef83e0faca1389c70046aba1d49cfd36f65b65b6b72b978",
+     "size_bytes": 12033023,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-01.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:12:53Z",
+     "sha256": "8e92236e7c6b3a81fcf01e1855140520751cb7411724112112485abc200952e3",
+     "size_bytes": 12033027,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-02.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:12:55Z",
+     "sha256": "df560733b701ac645d962c44f1c0853e3219a9faaaf4b4cf281af80298eb66da",
+     "size_bytes": 12032968,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-03.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:12:57Z",
+     "sha256": "1e906cd80048b5daca82455415efc7ac90b907fdf5e6486db8392b8f92a4c754",
+     "size_bytes": 12033039,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-04.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:12:59Z",
+     "sha256": "e24213173b98f8bc69bbfbc4ddfc93a4af43b69908c19ae8561c1a76539eade8",
+     "size_bytes": 12033005,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-05.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:01Z",
+     "sha256": "81b4c511cb98e9182c176d0d232bfe7a7699705667d514018b498cb29a8b55e6",
+     "size_bytes": 12033003,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-06.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:03Z",
+     "sha256": "ae6573c29eeff89f352064fbfee7e59a1b8214bfcab64000bfc11462aac59113",
+     "size_bytes": 12032989,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-07.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:05Z",
+     "sha256": "8ebd3c19c5ff18f408d07448883f36a68f731ede81b258bd8423a9b078cb296c",
+     "size_bytes": 12033036,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-08.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:07Z",
+     "sha256": "623fc435672ce62312ac0e983a499746b444160d538a06b4a2f26ccdfefd49f3",
+     "size_bytes": 12032835,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-09.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:09Z",
+     "sha256": "bacfd3ac7fef927520daf12e23e561fd4174c13e9a81b260ebdb50eace324cbc",
+     "size_bytes": 12033037,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-10.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:11Z",
+     "sha256": "3eaaa746e6046ed8f1758feb36a9e92c34bc92674f40e317232d8c7fe8d657d1",
+     "size_bytes": 12033076,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-11.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:13Z",
+     "sha256": "8b65baa9069ab134b6638ee589392c1659e18104621a23bcd9f5146edbe2a0e0",
+     "size_bytes": 12032757,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-12.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:15Z",
+     "sha256": "19eeda4dbda3440b47451ee69bf1b36340fd7bac21b2e909d0948fdf6e35650e",
+     "size_bytes": 12033038,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-13.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:17Z",
+     "sha256": "57a9c1f8726b99ccb52d84eb0eb156ca5f2737b9ef7fbbd52a580059cea0c29b",
+     "size_bytes": 12032676,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-14.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:19Z",
+     "sha256": "a6feb8a38272242e8245b0037cfb951511901295efa3cb4d4399867da105b065",
+     "size_bytes": 12032918,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-15.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:21Z",
+     "sha256": "ddea9f8a5b6797fe3d9aa7aca077e509847faa8c1203cc1cf8184fb0a2f96aa2",
+     "size_bytes": 12020704,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-16.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:23Z",
+     "sha256": "9b5ef89b44744f400bb6e546d7716a9ff4fbff6712721e7b6105e89048237ce7",
+     "size_bytes": 12025129,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-17.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:25Z",
+     "sha256": "ebdd787e514876b51e2ad7260e0bd353b94124d87a16e8226fa62f7d377fb65b",
+     "size_bytes": 11871909,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-18.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:13:27Z",
+     "sha256": "9bb8ec8ca4a029b9625a637907f0c7430f05cb5f3f7a3a37c857f35f856b6937",
+     "size_bytes": 10826218,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/9133e4327bbcf9adc1cba24360f50e50a6b4d11c/dump-19.csv"
+    }
+   ],
+   "upstream_header": "Updated: 2025-10-01 10:25:04 +0000",
+   "upstream_lines": 1203340,
+   "url": "https://github.com/zapret-info/z-i/tree/9133e4327bbcf9adc1cba24360f50e50a6b4d11c (dump-00..19.csv)"
+  },
+  "zi_history/extract_2022-01-01_d291c7d7d7.csv": {
+   "git_commit": "d291c7d7d7e406fbd8d08b1c9413a4ebb51fc42a",
+   "license": "No license file in zapret-info/z-i; Roskomnadzor registry dump (public under Decree 1101). Extract only; do not redistribute.",
+   "method": "GET",
+   "notes": "EXTRACT of z-i dump.csv at commit d291c7d7d7e406fbd8d08b1c9413a4ebb51fc42a ('Updated: 2021-12-31 16:42:00 +0000'): only entries whose domain or URL host is under a platform suffix (platform, field, value, decision_date). The full upstream file was streamed to scratch, hashed, filtered and deleted (it contains URLs of illegal content).",
+   "retrieved_utc": "2026-10-03T22:15:26Z",
+   "sha256": "791384e3cea18e5785945d0e6e25a7d144a3ab9c7d4e1d42ba243afde61a9259",
+   "size_bytes": 211904,
+   "upstream_header": "Updated: 2021-12-31 16:42:00 +0000",
+   "upstream_lines": 548880,
+   "upstream_sha256": "c1b78e698793fa27a07ae623e675cd4cff44e1cf64cfdb6deebc6b697bca131a",
+   "upstream_size_bytes": 92609391,
+   "url": "https://raw.githubusercontent.com/zapret-info/z-i/d291c7d7d7e406fbd8d08b1c9413a4ebb51fc42a/dump.csv"
+  },
+  "zi_history/extract_2023-01-01_9e1f59db33.csv": {
+   "git_commit": "9e1f59db3360f5caaaf8ebde0581e867b7fff4c8",
+   "license": "No license file in zapret-info/z-i; Roskomnadzor registry dump (public under Decree 1101). Extract only; do not redistribute.",
+   "method": "GET",
+   "notes": "EXTRACT of z-i dump.csv at commit 9e1f59db3360f5caaaf8ebde0581e867b7fff4c8 ('Updated: 2022-12-31 16:46:00 +0000'): only entries whose domain or URL host is under a platform suffix (platform, field, value, decision_date). The full upstream file was streamed to scratch, hashed, filtered and deleted (it contains URLs of illegal content).",
+   "retrieved_utc": "2026-10-03T22:15:42Z",
+   "sha256": "1a176c5d61c9f038669f54146f69ec5806888f88e489a3383ab148aa1048be26",
+   "size_bytes": 362936,
+   "upstream_header": "Updated: 2022-12-31 16:46:00 +0000",
+   "upstream_lines": 621039,
+   "upstream_sha256": "07cc68047f34fb7de96eb40c5253ca3c3d8499f8d29b54c1f21895a3b22cb8ae",
+   "upstream_size_bytes": 96085709,
+   "url": "https://raw.githubusercontent.com/zapret-info/z-i/9e1f59db3360f5caaaf8ebde0581e867b7fff4c8/dump.csv"
+  },
+  "zi_history/extract_2024-01-01_99aec91c81.csv": {
+   "git_commit": "99aec91c810505e9b60129cc70c0f8c58411a11c",
+   "license": "No license file in zapret-info/z-i; Roskomnadzor registry dump (public under Decree 1101). Extract only; do not redistribute.",
+   "method": "GET",
+   "notes": "EXTRACT of z-i dump.csv at commit 99aec91c810505e9b60129cc70c0f8c58411a11c ('Updated: 2023-12-31 11:25:03 +0000'): only entries whose domain or URL host is under a platform suffix (platform, field, value, decision_date). The full upstream file was streamed to scratch, hashed, filtered and deleted (it contains URLs of illegal content).",
+   "retrieved_utc": "2026-10-03T22:15:58Z",
+   "sha256": "01338fa270fbb91523edd8ebb026ff13e3d1bb09bb1864b57d4b3804873cbb0e",
+   "size_bytes": 447777,
+   "upstream_header": "Updated: 2023-12-31 11:25:03 +0000",
+   "upstream_lines": 541641,
+   "upstream_sha256": "d162e790f17bd40385b40eb4f6e25c9eab3afe77f17e8c4a6dc23f26cbc8059c",
+   "upstream_size_bytes": 96734011,
+   "url": "https://raw.githubusercontent.com/zapret-info/z-i/99aec91c810505e9b60129cc70c0f8c58411a11c/dump.csv"
+  },
+  "zi_history/extract_2024-05-07_94b080bebc.csv": {
+   "git_commit": "94b080bebc7338dcbb6045ad6147656a1db974e3",
+   "license": "No license file in zapret-info/z-i; Roskomnadzor registry dump (public under Decree 1101). Extract only; do not redistribute.",
+   "method": "GET",
+   "notes": "EXTRACT of z-i splits at commit 94b080bebc7338dcbb6045ad6147656a1db974e3 ('Updated: 2024-05-06 16:30:03 +0000'): only entries whose domain or URL host is under a platform suffix (platform, field, value, decision_date). Upstream files streamed to scratch, hashed, filtered and deleted (they contain URLs of illegal content).",
+   "retrieved_utc": "2026-10-03T22:17:13Z",
+   "sha256": "ac88e549ec17e6955f5f66edaf3bb1defa03cca7cceddd3834bd57fe0312e20a",
+   "size_bytes": 568451,
+   "upstream_files": [
+    {
+     "retrieved_utc": "2026-10-03T22:17:13Z",
+     "sha256": "637a432484c8f26b71adb8a00924288d3973e2d80bb85a9da1d90d7dee41cdce",
+     "size_bytes": 5788084,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-00.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:15Z",
+     "sha256": "f352ae5d3667d9a04ef7b795239cc924ef9ff882e6716596c47fcde57086c3d4",
+     "size_bytes": 5788050,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-01.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:17Z",
+     "sha256": "806bcf485729242cbdb071b5e31a3de6a7192865b1d79206a0f8d3a344fefa7a",
+     "size_bytes": 5788113,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-02.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:19Z",
+     "sha256": "ff917f21c4fa68121f4746ed71381c4afd37ea35ff7bc6218c81c20020210e4a",
+     "size_bytes": 5788120,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-03.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:21Z",
+     "sha256": "ea4603fe7b25bb34b088c1e28a1abe1b8888100c00da2c73117d67d1e92e235b",
+     "size_bytes": 5788029,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-04.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:23Z",
+     "sha256": "f6cf752cf776e7c2fc3097a65aed8b178d2547ca52d8cc6412bc49695989aff4",
+     "size_bytes": 5788065,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-05.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:25Z",
+     "sha256": "376d9b7cc114ea0bd476b8cd584b608e13397eee464a2dd43ac9a6c744039cce",
+     "size_bytes": 5788071,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-06.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:27Z",
+     "sha256": "56d269dbd1506e2f21ef508a9a2d572c7e6c10ac4122bc72877984b18f982429",
+     "size_bytes": 5787983,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-07.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:29Z",
+     "sha256": "44490002b71a4730de315e67f31946ab8417eae977b59ac1a864737f2aef694a",
+     "size_bytes": 5788094,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-08.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:31Z",
+     "sha256": "911aba40d58d201f4d889d16ad76abb6c40385428814fe785721f2afcd88259a",
+     "size_bytes": 5787879,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-09.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:33Z",
+     "sha256": "349b03dc59a0ecbe722ea9cd135e84ba6e33856c68b4fce940941bf389c19567",
+     "size_bytes": 5788090,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-10.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:35Z",
+     "sha256": "610df007770884665c1e7fab10ea94d7bbcec7896dfd773332b3837658d3c736",
+     "size_bytes": 5787857,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-11.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:37Z",
+     "sha256": "f43279c21bf96bfa0e37bbc2ba1283c17b8f6f898837f989d4b0c36b38c01b7a",
+     "size_bytes": 5787934,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-12.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:39Z",
+     "sha256": "3af8962bd6ac9f8a2b924831ccdd84f40ae9bd71d8b1d4547a618d6f9660451f",
+     "size_bytes": 5788028,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-13.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:41Z",
+     "sha256": "83d97cee0591410f99da84c3fa3b7ca9543b914757117aad9ef4bfd9180c9252",
+     "size_bytes": 5787916,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-14.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:43Z",
+     "sha256": "30c0193108fac8ac9fa22801ae545a3723e8f2a3df9b5152df38b8e2a965d2e0",
+     "size_bytes": 5788001,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-15.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:45Z",
+     "sha256": "825e5c2ada5f915dc20488418893fc0b0241ab6be6553bed5f5e94ec9ef537e3",
+     "size_bytes": 5787935,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-16.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:47Z",
+     "sha256": "b5cf9dc53e0992006b4aaabcd8f397c173d426d4bc90fbca80c14f783250964c",
+     "size_bytes": 5788082,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-17.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:49Z",
+     "sha256": "7b4904b0e9c1b1d382551298654aea744041c269ddda6f5c4fa39070b3406ca1",
+     "size_bytes": 5788059,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-18.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:17:51Z",
+     "sha256": "baca07445dec5253007c542739e4d7cb49b73a1e5ecc52e6a829ca7c3724b118",
+     "size_bytes": 1365490,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/94b080bebc7338dcbb6045ad6147656a1db974e3/dump-19.csv"
+    }
+   ],
+   "upstream_header": "Updated: 2024-05-06 16:30:03 +0000",
+   "upstream_lines": 632016,
+   "url": "https://github.com/zapret-info/z-i/tree/94b080bebc7338dcbb6045ad6147656a1db974e3 (splits)"
+  },
+  "zi_history/extract_2024-05-10_b6429c7268.csv": {
+   "git_commit": "b6429c7268a249f0cad7663b3ac6b2bd91b67e09",
+   "license": "No license file in zapret-info/z-i; Roskomnadzor registry dump (public under Decree 1101). Extract only; do not redistribute.",
+   "method": "GET",
+   "notes": "EXTRACT of z-i splits at commit b6429c7268a249f0cad7663b3ac6b2bd91b67e09 ('Updated: 2024-05-09 14:15:02 +0000'): only entries whose domain or URL host is under a platform suffix (platform, field, value, decision_date). Upstream files streamed to scratch, hashed, filtered and deleted (they contain URLs of illegal content).",
+   "retrieved_utc": "2026-10-03T22:18:05Z",
+   "sha256": "9f0104169f7620f6550e303c6a9e6bd9135ac4daf485c3d5f2cf4cd62cc8f23f",
+   "size_bytes": 572054,
+   "upstream_files": [
+    {
+     "retrieved_utc": "2026-10-03T22:18:05Z",
+     "sha256": "839689e1c83ba6af77aeb7f77b4014883e383550d81ae04b930ee2d7ac78f308",
+     "size_bytes": 5788066,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-00.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:07Z",
+     "sha256": "f3060b3cacba719c7a9a6bcf867e87eed77ecdc560786782a7493b9b529f7b8e",
+     "size_bytes": 5788109,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-01.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:09Z",
+     "sha256": "4a0cfb26035fb7e0b5e6638b9a210a9e5b2a106500ecca54126f02bb0f72ef02",
+     "size_bytes": 5788067,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-02.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:11Z",
+     "sha256": "854d28c7abcac15b50ff4ce0983e1e4163d29d267af20308a69ff36e8c7359ca",
+     "size_bytes": 5787878,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-03.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:13Z",
+     "sha256": "7784cf6df770c05f573d788f60e873f1c54bea2fc99e64009afd051028deb43f",
+     "size_bytes": 5788032,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-04.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:15Z",
+     "sha256": "d027acaf204341406727d3368ffd2637966d0dc850e58038190d0ebf4b5b462f",
+     "size_bytes": 5788054,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-05.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:17Z",
+     "sha256": "e20b8af4bf691744811b87b993308b6c874a454cd3d08d3ce8b8c7a2a2a47a57",
+     "size_bytes": 5788076,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-06.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:19Z",
+     "sha256": "c30693d5aecf32e3036265749a0dcc99ffcba87c5412727504c2bbd4d528817b",
+     "size_bytes": 5788009,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-07.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:21Z",
+     "sha256": "3e8e357a2dd7d8e08c8d5579c8f21b08a2306c1a7d4b53acc44c1dafbaac0b5d",
+     "size_bytes": 5788119,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-08.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:23Z",
+     "sha256": "76dccdc02e124a3148c206ed28371ae2f2e8c48723cb213e1a1d6810c6409764",
+     "size_bytes": 5788063,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-09.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:25Z",
+     "sha256": "d20dc0aa9d4761da6962df21809ab25b20352cdafe4a3e3f8281e21272013ac8",
+     "size_bytes": 5787012,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-10.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:27Z",
+     "sha256": "f8f6e6c1ee5c38b25c149b2a51f4bf882ce93c8a209db15510ff541216e0b1ff",
+     "size_bytes": 5788054,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-11.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:29Z",
+     "sha256": "e07c7bdaf12303f7e2cb74d0cc55e6a539481428112cb8a200aa95450aa11e35",
+     "size_bytes": 5788006,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-12.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:31Z",
+     "sha256": "1ace3d212808bbf82ad94bebb394ecf6d29bd4ca564a63005af9770f061ce0d9",
+     "size_bytes": 5788010,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-13.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:33Z",
+     "sha256": "4ed5bef725ec55cf39e105c50286a40c64c897540d5c9b07b2d18220f85967d7",
+     "size_bytes": 5787838,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-14.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:35Z",
+     "sha256": "2aab767f0e1166f39616905bcfe462d7533248bace3aa342d92a960e6d4757b7",
+     "size_bytes": 5787926,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-15.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:37Z",
+     "sha256": "0c4a9d2c6eeef004911a91bd1301d04e6a57da4a4e5dc4af07e4fd04f19d6649",
+     "size_bytes": 5748730,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-16.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:39Z",
+     "sha256": "41922fd8177e22697e79e6a205416fa87ff8dea62fed1d7173840ca836204537",
+     "size_bytes": 5787929,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-17.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:41Z",
+     "sha256": "bb6ff8fde3d62a0636be02fc4b4db312d37f78089d3502417e384101aed422a5",
+     "size_bytes": 5788110,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-18.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:18:43Z",
+     "sha256": "489d9c96e053dc934a9717cea168a2f963fd70b736030cf24555edde61b0aa02",
+     "size_bytes": 2012230,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/b6429c7268a249f0cad7663b3ac6b2bd91b67e09/dump-19.csv"
+    }
+   ],
+   "upstream_header": "Updated: 2024-05-09 14:15:02 +0000",
+   "upstream_lines": 635045,
+   "url": "https://github.com/zapret-info/z-i/tree/b6429c7268a249f0cad7663b3ac6b2bd91b67e09 (splits)"
+  },
+  "zi_history/extract_2025-01-01_1553f20a86.csv": {
+   "git_commit": "1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b",
+   "license": "No license file in zapret-info/z-i; Roskomnadzor registry dump (public under Decree 1101). Extract only; do not redistribute.",
+   "method": "GET",
+   "notes": "EXTRACT of z-i splits at commit 1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b ('Updated: 2024-12-31 12:05:02 +0000'): only entries whose domain or URL host is under a platform suffix (platform, field, value, decision_date). Upstream files streamed to scratch, hashed, filtered and deleted (they contain URLs of illegal content).",
+   "retrieved_utc": "2026-10-03T22:19:05Z",
+   "sha256": "9886bb2983ddbe2c556e08ce6df448cca3d59e4cf1d2ea197f803958cb89dd9f",
+   "size_bytes": 791552,
+   "upstream_files": [
+    {
+     "retrieved_utc": "2026-10-03T22:19:05Z",
+     "sha256": "f78b0dbb61f5548e2abefca5fb6f22fe340950934a3ddb759efc1e439b1f5ba9",
+     "size_bytes": 8144410,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-00.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:07Z",
+     "sha256": "ff49827c5cf7772bee54f9c295dfd3539025b4cf3deb5b7b4a89501179a678b5",
+     "size_bytes": 8144280,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-01.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:09Z",
+     "sha256": "66f0b05b35447be5f057c881b188f3d4fc52f372e2053a1508dc74598233fdc9",
+     "size_bytes": 8144348,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-02.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:11Z",
+     "sha256": "0ad883f4d1e07deb137d85859062432e01349e7f1d117ab18822d50be19c57aa",
+     "size_bytes": 8144351,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-03.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:13Z",
+     "sha256": "cafc0b39c342290e990e324e5b726487a1fd612d1c92d4e80dd99153ab57b47a",
+     "size_bytes": 8144430,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-04.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:15Z",
+     "sha256": "91343c7d215df037647af2c6277a2439be761391729a35c90a3ae3983be00e32",
+     "size_bytes": 8144390,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-05.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:17Z",
+     "sha256": "1e3ddf10913d3e6c1b9f01a7cce3f285d1f74a7147f35de746117bf51bcd09fa",
+     "size_bytes": 8144464,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-06.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:19Z",
+     "sha256": "6c70d8af9be25f58192f12077375d20d4fab351450535218bacf25ff02989829",
+     "size_bytes": 8144418,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-07.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:21Z",
+     "sha256": "024abd24b9dc84599d18afe60e9df303c98b4857bfe00150a5004dc086ae53ba",
+     "size_bytes": 8144432,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-08.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:23Z",
+     "sha256": "8a50080eff43ba57c415237d378c468a0815627af461af0b6281904a220d95c5",
+     "size_bytes": 8144418,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-09.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:25Z",
+     "sha256": "7f1374c594f595a767664dd63e614cb2671157459707e6b9cfe90587a402e851",
+     "size_bytes": 8144440,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-10.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:27Z",
+     "sha256": "dc955ddb93a51c0741503275ad112e9fd2274d26655fa9867e4c512f526abe04",
+     "size_bytes": 8144340,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-11.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:29Z",
+     "sha256": "9052312f47577faaa7b8137e3d1419b337509c0abb850a8eab2b6cf48aec5ae9",
+     "size_bytes": 8144361,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-12.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:31Z",
+     "sha256": "b22a66b5b098d6f2f54957dd53a3d6c2ee48e33d591f7d7e19beaa4431e1f00d",
+     "size_bytes": 8144441,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-13.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:33Z",
+     "sha256": "6cba3acb6272514ff08e8db44ca5992bf0b8521b361185fc47adc01d055403dc",
+     "size_bytes": 8026951,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-14.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:35Z",
+     "sha256": "e8773beb552be4f10ade93beccbdf5b70677c07a411f4d4fe341f896974c37bb",
+     "size_bytes": 8143741,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-15.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:37Z",
+     "sha256": "d3ac02b31ef604c96554ccdf1cb43bee6b37d8a8babb03344147c28e029be3d1",
+     "size_bytes": 8144253,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-16.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:39Z",
+     "sha256": "e434f012dab7db04b7b7a3a786393cce1a7e096d8e3f2bbd482ad02f18a45304",
+     "size_bytes": 8140863,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-17.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:41Z",
+     "sha256": "ea733ed2e66cefaa57ef34e1c3247e86e361936a258ac859a8830af9ae59e3db",
+     "size_bytes": 8144347,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-18.csv"
+    },
+    {
+     "retrieved_utc": "2026-10-03T22:19:43Z",
+     "sha256": "b72c680e5e11e3d7087cef256e3290214d1921cba7bb0d61d32812ba0636e613",
+     "size_bytes": 4976234,
+     "url": "https://raw.githubusercontent.com/zapret-info/z-i/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b/dump-19.csv"
+    }
+   ],
+   "upstream_header": "Updated: 2024-12-31 12:05:02 +0000",
+   "upstream_lines": 891700,
+   "url": "https://github.com/zapret-info/z-i/tree/1553f20a86dc909d460ce2ec9041e4fe8e5e4a0b (splits)"
+  }
+ }
+}

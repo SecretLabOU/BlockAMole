@@ -1,0 +1,18 @@
+metric,value
+porkbun_entries_total,911
+porkbun_handshake_entries,273
+icann_tlds_priced,543
+cheapest_first_year_usd,1.54
+cheapest_first_year_tlds,autos baby beauty beer boats casa click courses forum garden hair help homes lat lol makeup mom monster motorcycles pics quest rest skin study surf yachts
+n_tlds_first_year_lt_2usd,36
+n_tlds_first_year_lt_5usd,120
+median_first_year_usd,10.59
+median_renewal_usd,29.35
+focus_first_year_min_usd,1.54
+focus_first_year_max_usd,3.59
+focus_renewal_min_usd,4.63
+focus_renewal_max_usd,31.41
+focus_median_renewal_over_registration,8.87
+com_first_year_usd,11.08
+retrieved_utc,2026-10-03T21:46:19Z
+iana_list_version,"Version 2026100300, Last Updated Sat Oct  3 07:07:01 2026 UTC"

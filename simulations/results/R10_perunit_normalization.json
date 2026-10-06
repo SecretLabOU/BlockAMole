@@ -1,0 +1,86 @@
+{
+ "kmax": 8,
+ "T": 5.0,
+ "alpha": 0.95,
+ "results": {
+  "8": {
+   "constant_rate": {
+    "beta_star_interval": 0.6613384448508816,
+    "pi0_at_beta_star": 0.012699751038164009,
+    "mean_K_at_beta_star": 6.270400246113521,
+    "realized_burn_at_beta_star": 0.6529396112493088,
+    "status": "ok",
+    "single_crossing": true,
+    "pi0_at_beta": {
+     "0.8": 0.038756201281977744,
+     "1.0": 0.11111111111111109,
+     "1.6": 0.38053755017130325
+    }
+   },
+   "delta=lam_disc/kmax": {
+    "beta_star_interval": 1.6978306714639235,
+    "delta_at_beta_star": 0.21222883393299044,
+    "pi0_at_beta_star": 0.009469713675516604,
+    "mean_K_at_beta_star": 4.443003736159591,
+    "realized_burn_at_beta_star": 0.94293350208507,
+    "status": "ok",
+    "single_crossing": true,
+    "pi0_at_beta": {
+     "0.8": 0.0001364099921401863,
+     "1.0": 0.0005661364155117786,
+     "1.6": 0.007230283266789746
+    }
+   },
+   "delta=lam_disc/E_const[K]": {
+    "beta_star_interval": 0.9383909436088342,
+    "delta_at_beta_star": 0.21222883393255168,
+    "pi0_at_beta_star": 0.009469713675429611,
+    "mean_K_at_beta_star": 4.443003736166797,
+    "realized_burn_at_beta_star": 0.9429335020846498,
+    "status": "ok",
+    "single_crossing": true,
+    "pi0_at_beta": {
+     "0.8": 0.0015461906648191047,
+     "1.0": 0.018715465510070715,
+     "1.6": 0.38342830834238883
+    }
+   },
+   "delta=lam_disc": {
+    "beta_star_interval": 0.21222883393303468,
+    "delta_at_beta_star": 0.21222883393303468,
+    "pi0_at_beta_star": 0.009469713675525368,
+    "mean_K_at_beta_star": 4.443003736158862,
+    "realized_burn_at_beta_star": 0.9429335020851117,
+    "status": "ok",
+    "single_crossing": true,
+    "pi0_at_beta": {
+     "0.8": 0.286506719591736,
+     "1.0": 0.36787985511081106,
+     "1.6": 0.5352614407692754
+    }
+   }
+  }
+ },
+ "note": "realized burn = delta E[K] (units/time, lam_intro = 1)",
+ "_meta": {
+  "runtime_s": 0.31,
+  "generated_utc": "2026-10-05T06:42:45Z",
+  "python": "3.13.7",
+  "numpy": "2.2.4",
+  "scipy": "1.15.3",
+  "code_sha256": {
+   "exact.py": "b58d5ba5421a3656af5ad53af827a2f19786c039830b9e4934a86be8980b0c38",
+   "exact_experiments.py": "5fafb3340b0204408a24899c00902e3b178c60d71f9051c05bd72b865ec6f304"
+  },
+  "canonical": {
+   "n": 8,
+   "lam_intro": 1.0,
+   "lam_a": 1.0,
+   "mu": 3.0,
+   "kmax": 8,
+   "T": 5.0,
+   "alpha": 0.95
+  },
+  "method": "exact CTMC (stationary law + pi_U expm(Q_UU T) 1); MC = independent unit-level Monte Carlo cross-check"
+ }
+}

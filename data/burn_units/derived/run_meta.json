@@ -1,0 +1,124 @@
+{
+ "generated_utc": "2026-10-06T02:47:44Z",
+ "gfwlist": {
+  "head": "39e9bcede210515011621dae37b20c16b6d16ed8",
+  "head_date": "2026-10-02T13:31:39+00:00",
+  "versions_with_platform_changes": 77
+ },
+ "irblock_line_totals": {
+  "dns_fqdn": 5270271,
+  "http_fqdn": 2527249,
+  "dns_apex": 2994294,
+  "http_apex": 1639812,
+  "categories": 87281
+ },
+ "azurefd_episode": {
+  "first_measured_day": "2025-08-02",
+  "first_day_with_anomaly": "2025-08-02",
+  "last_day_with_anomaly_before_lift": "2026-09-04",
+  "lift_day": "2026-09-05",
+  "share_before_lift": 0.6460211681693454,
+  "share_after_lift": 0.004166666666666667,
+  "weekly_share_min_before_lift": 0.3611111111111111,
+  "weekly_share_max_before_lift": 1.0,
+  "endpoints": 39,
+  "measurements_before_lift": 2551,
+  "measurements_after_lift": 240,
+  "endpoints_majority_anomalous_before_lift": 39,
+  "endpoint_share_min_before_lift": 0.5058823529411764,
+  "endpoint_share_median_before_lift": 0.6435643564356436,
+  "endpoints_with_any_anomaly_after_lift": 1
+ },
+ "ooni_file_stats": {
+  "agg_CN_2026-07-01_2026-08-01_domain.json": {
+   "distinct_domains": 160151,
+   "measurements": 1168228
+  },
+  "agg_CN_2026-08-01_2026-09-01_domain.json": {
+   "distinct_domains": 167389,
+   "measurements": 1118483
+  },
+  "agg_CN_2026-09-01_2026-10-01_domain.json": {
+   "distinct_domains": 191626,
+   "measurements": 1105042
+  },
+  "agg_IR_2024-10-01_2025-10-01_domain.json": {
+   "distinct_domains": 2909,
+   "measurements": 3436091
+  },
+  "agg_IR_2025-10-01_2026-10-01_domain.json": {
+   "distinct_domains": 3066,
+   "measurements": 4130412
+  },
+  "agg_RU_2024-10-01_2025-10-01_domain.json": {
+   "distinct_domains": 3623,
+   "measurements": 33233261
+  },
+  "agg_RU_2025-10-01_2026-10-01_domain.json": {
+   "distinct_domains": 75549,
+   "measurements": 53133204
+  }
+ },
+ "ooni_cn_workersdev_stability": {
+  "months": [
+   "2026-07-01",
+   "2026-08-01",
+   "2026-09-01"
+  ],
+  "names_all_months": 285,
+  "blocked_first_to_clear_last": 3,
+  "clear_in_last_month_any_meas": 124,
+  "clear_in_last_month_first_seen_in_last_two_months": 120
+ },
+ "ru_registry_listed_low_coverage": {
+  "platforms": [
+   "azurewebsites.net",
+   "firebaseapp.com",
+   "github.io",
+   "netlify.app",
+   "onrender.com",
+   "pages.dev",
+   "run.app",
+   "vercel.app",
+   "web.app"
+  ],
+  "names": 88,
+  "valid": 43,
+  "anomalous": 0
+ },
+ "cn_heroku_routing": {
+  "others_tested": 358,
+  "others_blocked": 357,
+  "ooni_tested": 18,
+  "ooni_clear": 17,
+  "ooni_mixed": 1,
+  "ooni_blocked": 0,
+  "gfw_ingress_rows": 18,
+  "gfw_ingress_first": "2023-01-01",
+  "gfw_ingress_last": "2024-07-21"
+ },
+ "thresholds": {
+  "OONI_MIN_MEAS": 3,
+  "OONI_BLOCK_SHARE": 0.5,
+  "OONI_CLEAR_SHARE": 0.1,
+  "MIN_TESTED": 5
+ },
+ "class_counts": {
+  "CN": {
+   "tenant": 10,
+   "mixed": 4,
+   "insuff": 4,
+   "suffix": 1
+  },
+  "IR": {
+   "insuff": 12,
+   "tenant": 4,
+   "suffix": 3
+  },
+  "RU": {
+   "tenant": 14,
+   "none": 4,
+   "mixed": 1
+  }
+ }
+}

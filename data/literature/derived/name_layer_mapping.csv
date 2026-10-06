@@ -1,0 +1,7 @@
+scenario,label,basis,rows,mean_time_to_block,per_unit_hazard_per_day,kmax,alpha,const_rate_lambda_disc_per_day,const_rate_min_mint_per_day_beta_avg,per_unit_min_mint_per_day,beta_star_avg,rho_star
+public_directory_gfw2018,"listed in a public directory (GFW, 2018)","measured (address units, not names)",G26,10 min,144.0,8,0.95,1152.0,1371.908,431.934,0.8397,2.9995
+software_release_gfw2016_median,"shipped in public software, median (GFW, 2015-16)","measured (address units, not names)",G27,11 d,0.0909,8,0.95,0.727,0.866,0.273,0.8397,2.9995
+software_release_gfw2016_mean,"shipped in public software, mean (GFW, 2015-16)","measured (address units, not names)",G27,14.8 d,0.0676,8,0.95,0.541,0.644,0.203,0.8397,2.9995
+assume_1d,"private minted name, ASSUMED 1 d",assumption,,1 d,1.0,8,0.95,8.0,9.527,3.0,0.8397,2.9995
+assume_7d,"private minted name, ASSUMED 7 d",assumption,,7 d,0.1429,8,0.95,1.143,1.361,0.429,0.8397,2.9995
+assume_30d,"private minted name, ASSUMED 30 d",assumption,,30 d,0.0333,8,0.95,0.267,0.318,0.1,0.8397,2.9995

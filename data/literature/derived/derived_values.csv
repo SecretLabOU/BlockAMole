@@ -1,0 +1,22 @@
+name,value,unit,formula,inputs,note
+gfw_2014_torrelay_leakage_excl_errors,0.00471,fraction of non-error tests,none / (S->C + none + C->S),G14,"Share of client-relay-hour tests in which no packet was dropped, errors excluded."
+gfw_2014_torrelay_leakage_incl_errors,0.00388,fraction of tests,none / all tests,G14,
+gfw_release_to_block_mean_2016,14.8,days,mean of batch delays,G27,
+gfw_release_to_block_median_2016,11.0,days,median of batch delays,G27,
+gfw_release_to_block_min_max_2016,2-36,days,range,G27,
+gfw_release_to_block_mean_2017,13.0,days,mean of batch delays,G29,
+gfw_release_to_block_median_2017,8.5,days,median of batch delays,G29,
+gfw_release_to_block_min_max_2017,2-35,days,range,G29,
+gfwatch_base_domains_still_blocked_frac,0.908,fraction,126K / 138.7K,G41,Right-censored at 31 Dec 2020; includes domains first seen late in the window.
+gfw_quic_ever_blocked_share_of_tranco,0.00837,fraction of tested FQDNs,"58,207 / 6,955,968",G34,Tested list is popularity-ranked; not a population rate.
+gfw_quic_union_over_weekly_mean,1.329,ratio,"58,207 / 43.8K",G34,Union over ~14 weeks vs weekly mean; mixes list churn and measurement misses. Do not read as churn.
+tspu_endpoint_coverage_lower_bound,0.2531,fraction of endpoints,"1,013,600 / 4,005,138",T03,Lower bound per authors.
+tspu_max_failure_rate,0.0219,fraction,max over Table 1 cells,T04,Min cell 0.00%; ER-Telecom worst; Rostelecom/OBIT have two TSPUs on path.
+iran_filter_ip_share,0.179,fraction of tested IPs,"as reported (3,595 IPs)",I01,"Denominator (20,000 site IPs minus unresponsive) not stated exactly."
+snowflake_hourly_turnover_from_20h_halflife,0.0341,per hour,1 - 0.5^(1/20),S01,Assumes memoryless turnover.
+snowflake_halflife_implied_by_2.7pct_per_hour,25.3,hours,ln 0.5 / ln(1-0.027),S10,vs ~20 h observed (S01): simulation default is slower churn.
+gfw_name_block_median_lower_bound_days,>=256,days,window length (right-censored),G43,More than 50% of GFW-blocked domains were blocked for the whole 256-day window.
+henan_over_gfw_mean_duration_ratio,0.205,ratio,35.7 / 173.8,G43,"GFW mean is itself censored at 256 d (lower bound), so the ratio is an upper bound."
+henan_over_gfw_cumulative_blocklist,5.66,ratio,"4,196,532 / 741,542",H01,
+amazon02_top100_collateral_increment_pp,4.11,percentage points of Tranco top-100,5.48 - 1.37,S08,
+cloudflare_top100_collateral_increment_pp,9.59,percentage points of Tranco top-100,17.81 - 8.22,S08,

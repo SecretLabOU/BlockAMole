@@ -1,0 +1,8 @@
+# Packages of the simulator, the exact solver and paper/figures/make_figures.py,
+# pinned to the versions of the reference runs (Python 3.13.7). README.md in
+# the repository root describes the builds those runs used. pandas is imported
+# only by paper/figures/make_figures.py.
+numpy==2.2.4
+scipy==1.15.3
+matplotlib==3.10.1
+pandas==3.0.6
