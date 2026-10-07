@@ -16,8 +16,8 @@ simulations/code/               exact solver (exact.py) and exact experiments R1
 simulations/results/            the 23 result files behind the paper's model results
 paper/figures/make_figures.py   draws Figures 1 and 2 from the result files and checks them
 figures/                        frontier.pdf (Figure 1) and phase.pdf (Figure 2)
-data/burn_units/                which names China, Iran and Russia block (Table 1, Sections 1, 3, 6.1, 7, 8
-                                and 9, Appendix D)
+data/burn_units/                which names China and Iran block and Russia orders blocked (Table 1,
+                                Sections 1, 3, 6.1, 7, 8 and 9, Appendix D)
 data/snowflake/                 Snowflake's rendezvous names (Sections 1, 2, 3, 6.2 and 9, Appendix D)
 data/literature/                published parameter values with verbatim quotes (Sections 1, 2, 3, 5.3, 5.4
                                 and 6.2, Appendix D)
@@ -220,7 +220,7 @@ Linux machine.
   authors of the four Snowflake commit patches (names and e-mail addresses)
   and the contributors that Tor's release notes credit, a few with e-mail
   addresses. The analyses identify issue threads by URL and date, comments by
-  position and time and commits by hash, never by author, and no downloaded
+  position and time, and commits by hash, never by author, and no downloaded
   input is redistributed.
 - Russia's blocking registry lists the names, URLs and addresses under
   blocking orders, some of them for illegal content. Read
