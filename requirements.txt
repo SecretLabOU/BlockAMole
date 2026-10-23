@@ -3,7 +3,7 @@
 # paper's runs used Ubuntu's builds of numpy and scipy (reference BLAS and
 # LAPACK), matplotlib (3.10.1+dfsg1, fontTools 4.55.3) and requests, and
 # pandas from PyPI. Other builds can change the last digits of the exact
-# results and the bytes of the figures, see README.md. simulations/requirements.txt
+# results, and README.md names the builds that redraw the figures byte for byte. simulations/requirements.txt
 # and data/requirements.txt list the packages of each part separately.
 numpy==2.2.4
 scipy==1.15.3

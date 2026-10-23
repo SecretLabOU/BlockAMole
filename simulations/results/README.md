@@ -21,7 +21,7 @@ workstation of its Appendix E.
 | `R1_exact_validation.json` | `python3 exact_experiments.py --only R1` | 1.9 | implementation check (Section 5.2 and Appendix B), burst frontiers (Section 5.4), checks of Figure 2 |
 | `R2_frontiers.json` | `python3 exact_experiments.py --only R2` | 60.89 | abstract, Sections 1, 5.2 and 5.4, Figure 1, checks of Figure 2 |
 | `R3_budget_split.json` | `python3 exact_experiments.py --only R3` | 62.43 | not reported in the paper |
-| `R4_strategic_censor.json` | `python3 exact_experiments.py --only R4` | 44.13 | strategic block timing (Sections 1, 5.4 and 8, Appendix C), the values at beta = 1 in Section 5.2 |
+| `R4_strategic_censor.json` | `python3 exact_experiments.py --only R4` | 44.13 | strategic block timing (abstract, Sections 1 and 5.4, Appendix C), the values at beta = 1 in Section 5.2 |
 | `R5_diversification.json` | `python3 exact_experiments.py --only R5` | 22.54 | diversification (Section 5.4), Monte Carlo check (Appendix C) |
 | `R6_heavy_tail_discovery.json` | `python3 exact_experiments.py --only R6` | 5.93 | Remark B.1 on general discovery delays (cited in Section 4) |
 | `R7_sync_discovery.json` | `python3 exact_experiments.py --only R7` | 19.19 | Remark 4.4 on synchronized discovery, Monte Carlo check (Appendix C) |
@@ -32,19 +32,20 @@ workstation of its Appendix E.
 | `R12_figures.json` | `python3 exact_experiments.py --only FIG` | 6.29 | not reported in the paper (lists the auxiliary figures that FIG writes to `../figures_exact/`) |
 | `R13_rotation_speed.json` | `python3 exact_experiments.py --only R13` | 9.06 | rotation speed (Sections 5.3 and 9), and the check of Theorem 5.3 in n and mu (Section 5.2 and Appendix A) |
 
-- The ten simulations take about one hour on one core (their runtimes sum to
-  3,356 s). `run_experiments.py` without `--only` runs all ten.
+- The ten experiments, nine simulations and the closed-form grid E4, take about one
+  hour on one core (their runtimes sum to 3,356 s). `run_experiments.py` without
+  `--only` runs all ten.
 - The exact suite takes about five minutes of wall time on a 20-core
   workstation, because its Monte Carlo cross-checks run one process per core.
-  Appendix E reports 302 s, and the runtimes of the 13 R files sum to 300.7 s.
+  The shipped run took 302 s, and the runtimes of the 13 R files sum to 300.7 s.
   `exact_experiments.py` without `--only` runs all of R1 to R13 and FIG, in
   that order.
 - R1 reads all ten E files, so the E files must exist before R1 runs. FIG reads
   E2, E7, R2, R4, R5 and R8.
-- Appendix E counts the 12,248 numbers in the 13 R files. These are their
-  numeric values other than booleans and `_meta.runtime_s`. The comparison
-  under "Rerun and compare" prints 12,238 of them, because it reports the 10
-  file sizes in R1's `inputs` separately.
+- The 13 R files hold 12,248 numbers, their numeric values other than
+  booleans and `_meta.runtime_s`. The comparison under "Rerun and compare"
+  prints 12,238 of them, because it reports the 10 file sizes in R1's
+  `inputs` separately.
 - E3 averages `max(8, seeds // 2)` = 12 seeds per point, although its
   `_meta.seeds` records the run setting, 24. This is the 12 in Appendix E's
   "12 to 24 independent seeds".
@@ -117,7 +118,7 @@ ee8f378d282fe6d9a97a1f0211c036fde4050b59e2928f9ae4077ecf2451a756  simulations/re
 2ed397dfdf8c3efa540146f38496d020b0eee3e39fa43ea4040146cbfabe7ecc  simulations/results/R13_rotation_speed.json
 b58d5ba5421a3656af5ad53af827a2f19786c039830b9e4934a86be8980b0c38  simulations/code/exact.py
 5fafb3340b0204408a24899c00902e3b178c60d71f9051c05bd72b865ec6f304  simulations/code/exact_experiments.py
-ecbec4445a888dd50611c6743d6be0108d22cb042ce270bab0d316df1c762526  figures/frontier.pdf
+3008e961a901641137a2b8fd1001863a6cb87252362cf1021f60718b6e3129b7  figures/frontier.pdf
 e70893b49affd7c4bfefa1ac073f397456a50f8c46bc29ca51b9dd53cb2d6b6d  figures/phase.pdf
 EOF
 ```
@@ -266,9 +267,14 @@ App. C  largest Monte Carlo |z|: 2.32 | theta-limit check at theta = 1e3, 1e4: 1
 App. C  per-name discovery: target met up to delta = 0.212 | Pr[K >= 1]: 0.991 | burns per mint interval: 0.943 | while a name is live: 0.952 | constant-rate beta*: 0.661
 ```
 
-The text of Section 5.2 gives the first k_max with beta* > 1 only for
-(0.95, 5), 63, and Figure 1 marks it for the time average and for T = 1, 5
-and 20 (20, 34, 63 and 128, the line "Fig. 1"). The paper does not report
+Of the frontiers at k_max = 2 to 32 in the first two lines, the text of
+Section 5.2 gives only those at k_max = 8, 0.840 and 0.661. The others show
+that both frontiers rise with the buffer, as Figure 1 plots. Of the line
+"beta*(0.95,T) at k_max = 8", the text gives only 0.661, and the other values
+show that longer windows lower the frontier gently. The text of Section 5.2
+gives the first k_max with beta* > 1 only for (0.95, 5), 63, and Figure 1
+marks it for the time average and for T = 1, 5 and 20 (20, 34, 63 and 128,
+the line "Fig. 1"). The paper does not report
 the other values of the line "first k_max with beta* > 1 grows with ...",
 43, 87, 31 and 369. They show what the text says, that the smallest buffer
 grows with the window length and with the target. The thresholds of Section
@@ -399,7 +405,7 @@ birth–death pool, which needs no such check.
 
 | file | written by (repository root) | paper item | SHA-256 |
 |---|---|---|---|
-| `figures/frontier.pdf` | `python3 paper/figures/make_figures.py` | Figure 1 | `ecbec4445a888dd50611c6743d6be0108d22cb042ce270bab0d316df1c762526` |
+| `figures/frontier.pdf` | `python3 paper/figures/make_figures.py` | Figure 1 | `3008e961a901641137a2b8fd1001863a6cb87252362cf1021f60718b6e3129b7` |
 | `figures/phase.pdf` | `python3 paper/figures/make_figures.py` | Figure 2 | `e70893b49affd7c4bfefa1ac073f397456a50f8c46bc29ca51b9dd53cb2d6b6d` |
 
 The script reads `E2_phase_transition.json`, `R1_exact_validation.json` and
@@ -412,11 +418,12 @@ cmp figures/frontier.pdf figures_check/frontier.pdf
 cmp figures/phase.pdf figures_check/phase.pdf
 ```
 
-With Python 3.13.7, NumPy 2.2.4, SciPy 1.15.3, Matplotlib 3.10.1 (Ubuntu
-package 3.10.1+dfsg1 with fontTools 4.55.3) and pandas 3.0.6, the script ends
-with "all checks passed" and `cmp` prints nothing, because the PDFs are
-identical byte for byte. Other Matplotlib or fontTools builds can embed
-different bytes while all 85 checks pass.
+The shipped PDFs were drawn with Python 3.14.4, NumPy 2.3.5, SciPy 1.16.3,
+Matplotlib 3.10.7 (Ubuntu package 3.10.7+dfsg1 with fontTools 4.61.1) and
+pandas 3.0.6. With these builds the script ends with "all checks passed" and
+`cmp` prints nothing, because the PDFs are identical byte for byte. Other
+Matplotlib or fontTools builds can embed different bytes while all 85 checks
+pass.
 
 Two outputs of the code are not included, because the paper does not use
 them. `python3 paper/figures/make_figures.py --all` also writes
@@ -472,7 +479,7 @@ EOF
 ```
 
 What the reference reruns gave on the reference workstation, with the
-versions above:
+builds of the paper's runs (Python 3.13.7, NumPy 2.2.4 and SciPy 1.15.3):
 
 - Two reruns of E1 to E10 took 57 and 58 minutes on one core and reproduced
   every number exactly (max |diff| 0 in all ten files).

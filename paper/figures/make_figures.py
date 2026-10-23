@@ -273,14 +273,19 @@ def fig_phase(outdir, written):
 # --------------------------------------------------------------------------- #
 #  frontier.pdf (fig:frontier)
 # --------------------------------------------------------------------------- #
-# rounded values of the plotted curves that the paper reports in Section 5.2
-# (PAPER_INTERVAL_T5, PAPER_TIMEAVG, PAPER_KMAX8_BY_T) and in the caption of
-# Figure 1 (PAPER_FIRST_KMAX_ABOVE_1). SRC_INTERVAL_T5 marks two rounded R2
-# values that the paper does not print and the paper's limit 1.016 of the
-# T = 5 frontier, which the curve reaches at k_max = 256 to three decimals.
+# rounded values of the plotted curves (PAPER_INTERVAL_T5, PAPER_TIMEAVG,
+# PAPER_KMAX8_BY_T) and the caption values of Figure 1 (PAPER_FIRST_KMAX_ABOVE_1).
+# Section 5.2 prints only the k_max = 8 values at T = 5 (0.661 and 0.840) and the
+# limit 1.016 of the T = 5 frontier, which the curve reaches at k_max = 256 to
+# three decimals. SRC_INTERVAL_T5 and SRC_TIMEAVG mark the other values as
+# rounded R2 values that the paper plots but does not print.
 PAPER_INTERVAL_T5 = {2: 0.098, 4: 0.355, 8: 0.661, 16: 0.865, 32: 0.963, 64: 1.001, 128: 1.013,
             256: 1.016}
-SRC_INTERVAL_T5 = {64: "R2 (rounded)", 128: "R2 (rounded)", 256: "paper: limit 1.016"}
+SRC_INTERVAL_T5 = {2: "R2 (rounded)", 4: "R2 (rounded)", 16: "R2 (rounded)",
+                   32: "R2 (rounded)", 64: "R2 (rounded)", 128: "R2 (rounded)",
+                   256: "paper: limit 1.016"}
+SRC_TIMEAVG = {8: "paper (time average)"}
+SRC_KMAX8_BY_T = {"5.0": "paper"}
 PAPER_TIMEAVG = {2: 0.257, 4: 0.577, 8: 0.840, 16: 0.980, 32: 1.035}
 PAPER_FIRST_KMAX_ABOVE_1 = {"time_average": 20, "1.0": 34, "5.0": 63, "20.0": 128}
 PAPER_KMAX8_BY_T = {"1.0": 0.755, "5.0": 0.661, "20.0": 0.552}       # k_max = 8
@@ -338,16 +343,16 @@ def fig_frontier(outdir, written):
                  else PAPER_TIMEAVG if tkey == "time_average" else {})
         for kk, v in facts.items():
             src = (SRC_INTERVAL_T5.get(kk, "paper (interval)") if tkey == "5.0"
-                   else "paper (time average)")
+                   else SRC_TIMEAVG.get(kk, "R2 (rounded)"))
             check(F, f"{name}: beta* at k_max={kk}", y[np.flatnonzero(k == kk)[0]], v, 5e-4,
                   src)
         if tkey in PAPER_KMAX8_BY_T:
             check(F, f"{name}: beta* at k_max=8", y[np.flatnonzero(k == 8)[0]],
-                  PAPER_KMAX8_BY_T[tkey], 5e-4, "paper")
+                  PAPER_KMAX8_BY_T[tkey], 5e-4, SRC_KMAX8_BY_T.get(tkey, "R2 (rounded)"))
         check_true(F, f"{name}: below c_a/alpha for every k_max", np.max(y) <= ca_alpha,
                    f"max {np.max(y):.5f}")
     handles.append(Line2D([], [], ls="none", marker="o", ms=3.6, mfc="white", mec=INK,
-                          mew=0.9, label=r"first $k_{\max}$ with $\beta^{\star}>1$"))
+                          mew=0.9, label=r"first $k_{\max}$ with frontier $>1$"))
     ax.set_xscale("log", base=2)
     ax.set_xlim(2, 256)
     ticks = [2, 4, 8, 16, 32, 64, 128, 256]
@@ -355,8 +360,8 @@ def fig_frontier(outdir, written):
     ax.xaxis.set_major_formatter(FixedFormatter([str(t) for t in ticks]))
     ax.set_ylim(0.0, 1.16)
     ax.yaxis.set_major_locator(FixedLocator([0, 0.2, 0.4, 0.6, 0.8, 1.0]))
-    ax.set_xlabel(r"buffer cap $k_{\max}$")
-    ax.set_ylabel(r"frontier $\beta^{\star}$ ($\alpha=0.95$)")
+    ax.set_xlabel(r"buffer $k_{\max}$")
+    ax.set_ylabel(r"frontier ($\alpha=0.95$)")
     figstyle.tidy(ax)
     ax.xaxis.set_minor_locator(NullLocator())
     ax.legend(handles=handles, loc="lower right", frameon=False, handlelength=2.4)

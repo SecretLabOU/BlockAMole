@@ -46,10 +46,10 @@ Every file is written by `python3 analysis.py`. The function named is the one in
 | `ooni_platform_summary.csv` | yes | `ooni_summary()` | OONI per censor and platform: window, host names seen, tested, blocked, clear and mixed, tenants tested, bare-suffix measurements | Table 1 legend, Section 6.1, Appendix D |
 | `qualitative_events.csv` | yes | `qualitative_events()` | three dated reports with short quotes checked against the raw pages | Section 3, Scope (Tor GitLab issue 40064) |
 | `ru_antifilter_platform_summary.csv` | yes | `antifilter_summary()` | Russia, antifilter list of 2026-10-02 per platform: entries, tenants, suffix entry | the Russian ∅ cells |
-| `ru_ooni_vs_registry.csv` | yes | `ru_ooni_vs_registry()` | OONI Russia measurements of names that are or are not registry-listed, per platform | Section 6.1, Table 1 caption and ‡ |
-| `ru_registry_platform_summary.csv` | yes | `registry_summary()` | Russia, registry dump of 2025-10-01 per platform: host entries, masks, URL hosts, tenants, suffix entry, decision dates, first snapshots | Table 1 Russia column and ‡ |
+| `ru_ooni_vs_registry.csv` | yes | `ru_ooni_vs_registry()` | OONI Russia measurements of names that are or are not registry-listed, per platform | Section 6.1, Table 1 caption and † |
+| `ru_registry_platform_summary.csv` | yes | `registry_summary()` | Russia, registry dump of 2025-10-01 per platform: host entries, masks, URL hosts, tenants, suffix entry, decision dates, first snapshots | Table 1 Russia column and † |
 | `ru_registry_timeseries.csv` | yes | `registry_summary()` | Russia, entries and tenants per platform in each of the 7 dumps | Section 6.1, Appendix D |
-| `run_meta.json` | yes | `main()` | run time, gfwlist head, IRBlock line totals, Azure Front Door episode, OONI file statistics, Heroku routing names, low-coverage registry names, thresholds, class counts | Table 1 △ and ∗, Section 6.1, Appendix D |
+| `run_meta.json` | yes | `main()` | run time, gfwlist head, IRBlock line totals, Azure Front Door episode, OONI file statistics, Heroku routing names, low-coverage registry names, thresholds, class counts | Table 1 △ and ‡, Section 6.1, Appendix D |
 | `tranco_bare_suffix_ranks.csv` | yes | `tranco_bare()` | Tranco rank of each bare suffix on 4 dates | no, it shows that each bare suffix was in the daily test input of GFWatch and IRBlock |
 | `ooni_platform_domains.csv` | no | `main()`, from `ooni_domain_table()` | OONI counts and class per host name | no |
 | `cn_gfwlist_platform_line_events.csv` | no | `gfwlist_history()` | gfwlist rule lines that mention a platform suffix, with the dates they were added and deleted | no |
@@ -131,13 +131,15 @@ The paper typesets Table 1 itself and does not input `burn_units_table.tex`. Bot
   undetermined. `class_counts` in `run_meta.json` follows `burn_units.csv`, so for China
   it counts `tenant` 10 and `mixed` 4 where the paper shows 11 ○ and 3 ○→●.
 - **Typesetting.** The generated table prints `--` where the paper prints ∅ and sets the
-  years in `\scriptsize`. Its caption, label (`tab:burn-units`, the paper's is
-  `tab:burn`), legend and column spacing are its own.
+  years in `\scriptsize`. It names the Lambda row `*.lambda-url.*.on.aws`, where the
+  paper prints the bare suffix `lambda-url.*.on.aws` like the other rows. Its caption,
+  label (`tab:burn-units`, the paper's is `tab:burn`), legend and column spacing are its
+  own.
 - **Legend.** The paper's legend names the seven China cells that rest on GFWatch alone,
-  defines ‡ as a wildcard entry whose enforcement OONI does not confirm, and reads ∗ as
+  defines † as a wildcard entry whose enforcement OONI does not confirm, and reads ‡ as
   "the bare suffix and Heroku's routing names are largely not blocked". The generated
-  legend instead gives the source windows and explains the dagger with the episode's
-  dates.
+  table marks these two cells with ‡ and ∗ instead, and its legend gives the source
+  windows and explains its own dagger, on China's `azurefd.net`, with the episode's dates.
 
 ## Reading Table 1 from `burn_units.csv`
 
@@ -150,7 +152,7 @@ The paper typesets Table 1 itself and does not input `burn_units_table.tex`. Bot
   the IRBlock window, 2025-01-15. ≤'20 marks `appspot.com`, whose rule is present on
   GFWatch's first day, 2020-03-20 (`gfw_onset_left_censored` in
   `cn_gfwatch_platform_summary.csv`).
-- ‡ marks the Russian cell with a suffix entry (`pages.dev`), and ∗ marks China's
+- † marks the Russian cell with a suffix entry (`pages.dev`), and ‡ marks China's
   `herokuapp.com`. The `notes` column gives the numbers behind both.
 - `n_tested` and `n_blocked` count OONI host names, as `coverage_source` states. A host
   name counts as tested with at least 3 non-failed measurements and as blocked when at
@@ -192,9 +194,9 @@ def symbol(r):
     if g in ("suffix-wide rule", "mixed (tenant, then suffix)") and cc != "IR":
         s += " ≤'20" if cc == "CN" and d <= "2020-03-20" else " '" + d[2:4]
     if cc == "RU" and g in ("suffix-wide rule", "mixed (tenant, then suffix)"):
-        s += " ‡"
+        s += " †"
     if cc == "CN" and r["platform"] == "herokuapp.com":
-        s += " ∗"
+        s += " ‡"
     return s
 
 table = {}
@@ -225,12 +227,12 @@ print("    azurefd.net names blocked per month:",
       ", ".join(f"{m} {month[(m, 'azurefd.net')]['blocked']} of {month[(m, 'azurefd.net')]['tested']}"
                 for m in ("2026-07", "2026-08", "2026-09")))
 pg, rp = reg["pages.dev"], ooni[("RU", "pages.dev")]
-print(f"  ‡ *.pages.dev (decision date {pg['reg_suffix_decision_date']}) absent from the dump of "
+print(f"  † *.pages.dev (decision date {pg['reg_suffix_decision_date']}) absent from the dump of "
       f"{pg['reg_last_snapshot_without_suffix']}, present in that of {pg['reg_first_snapshot_suffix']}; "
       f"OONI RU names under it {rp['ooni_names_any']}, tested {rp['ooni_tested']}; bare pages.dev "
       f"{round(float(rp['ooni_bare_share']) * int(rp['ooni_bare_meas']))} of {rp['ooni_bare_meas']} anomalous")
 hb = ooni[("CN", "herokuapp.com")]
-print(f"  ∗ bare herokuapp.com {round(float(hb['ooni_bare_share']) * int(hb['ooni_bare_meas']))} of "
+print(f"  ‡ bare herokuapp.com {round(float(hb['ooni_bare_share']) * int(hb['ooni_bare_meas']))} of "
       f"{hb['ooni_bare_meas']} anomalous; routing names {her['ooni_clear']} of {her['ooni_tested']} clear "
       f"({her['ooni_mixed']} intermittent); other names {her['others_blocked']} of {her['others_tested']} blocked")
 print("  ∅ registry tenants:", ", ".join(f"{p} {reg[p]['reg_tenants']}"
@@ -272,13 +274,13 @@ It prints the following.
 ```
 Table 1 (China, Iran, Russia)
   github.io                   ○            ○            ○
-  pages.dev                   ○            ●            ○→● '24 ‡
+  pages.dev                   ○            ●            ○→● '24 †
   workers.dev                 ○→● '22      ?            ○
   r2.dev                      ?            ?            ∅
   trycloudflare.com           ?            ●            ∅
   vercel.app                  ○→● '22      ?            ○
   netlify.app                 ○            ○            ○
-  herokuapp.com               ○→● '22 ∗    ●            ○
+  herokuapp.com               ○→● '22 ‡    ●            ○
   onrender.com                ○            ?            ○
   fly.dev                     ○            ?            ∅
   deno.dev                    ○            ?            ○
@@ -295,8 +297,8 @@ Table 1 legend
   appspot.com rule first seen 2020-03-20 at the start of GFWatch: True
   △ 39 Azure Front Door endpoints from 2025-08-02 to 2026-09-04: 64.6% of 2,551 measurements anomalous, then 0.4% of 240 from 2026-09-05
     azurefd.net names blocked per month: 2026-07 159 of 172, 2026-08 166 of 177, 2026-09 6 of 166
-  ‡ *.pages.dev (decision date 2024-05-06) absent from the dump of 2024-05-06, present in that of 2024-05-09; OONI RU names under it 14, tested 0; bare pages.dev 0 of 90 anomalous
-  ∗ bare herokuapp.com 2 of 17 anomalous; routing names 17 of 18 clear (1 intermittent); other names 357 of 358 blocked
+  † *.pages.dev (decision date 2024-05-06) absent from the dump of 2024-05-06, present in that of 2024-05-09; OONI RU names under it 14, tested 0; bare pages.dev 0 of 90 anomalous
+  ‡ bare herokuapp.com 2 of 17 anomalous; routing names 17 of 18 clear (1 intermittent); other names 357 of 358 blocked
   ∅ registry tenants: r2.dev 0, trycloudflare.com 0, fly.dev 0, on.aws 0
 Section 6.1
   GFWatch github.io tenants 259, suffix rule False; OONI China github.io 6 of 980 blocked
@@ -319,7 +321,7 @@ How these lines map to the paper:
   come from it: China blocks `workers.dev` and Iran `pages.dev` suffix-wide, and both
   block `github.io` per name.
 - The legend block gives the seven China cells with fewer than five OONI-tested names,
-  the ≤'20 of `appspot.com`, and the numbers behind △, ‡, ∗ and ∅.
+  the ≤'20 of `appspot.com`, and the numbers behind △, †, ‡ and ∅.
 - The Section 6.1 block gives 259 GFWatch tenants of `github.io` and no suffix rule,
   6 of 980 tested names blocked, 27 IRBlock tenants, 30 and 10,224 `cloudfront.net`
   tenants in the registry, the gaps of 405, 42 and 771 days, the OONI counts 984 of

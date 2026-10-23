@@ -21,7 +21,8 @@ code/
   rotation_game.py       event-driven (Gillespie) simulator of both layers
   censor_models.py       illustrative presets (GFW-, TSPU- and Iran-like), not
                          fitted to any censor
-  run_experiments.py     simulation experiments E1–E10, writes ../results/E*.json
+  run_experiments.py     experiments E1–E10 (nine simulations and the closed-form
+                         grid E4), writes ../results/E*.json
   exact.py               exact CTMC solver: stationary laws, interval
                          availability pi_U expm(Q_UU T) 1, frontiers, self-test
   exact_experiments.py   exact experiments R1–R13 and FIG, writes ../results/R*.json
@@ -61,8 +62,9 @@ The reference runs used Python 3.13.7 on Ubuntu 25.10, with Ubuntu's packages
 of NumPy 2.2.4 and SciPy 1.15.3, which use the reference BLAS and LAPACK
 3.12.1, and of Matplotlib 3.10.1 (3.10.1+dfsg1) with fontTools 4.55.3, and
 with pandas 3.0.6 from PyPI. The PyPI wheels of NumPy and SciPy bundle
-OpenBLAS and can change the last digits of the exact results, and other
-Matplotlib builds can change the bytes of the figures.
+OpenBLAS and can change the last digits of the exact results. The shipped
+figures were drawn with the builds that `results/README.md` names under
+"Figures", and other Matplotlib builds can change their bytes.
 
 - `exact_experiments.py` runs its Monte Carlo cross-checks in parallel with
   Python's `fork` start method, one process per core, which Windows lacks.
@@ -90,11 +92,11 @@ them in a copy of `simulations/` as `results/README.md` describes.
 - `python3 run_experiments.py --only E2,E7` runs a subset of the simulations.
   `--quick` uses 12 seeds and shorter runs, for a fast test only. Its values
   differ from the paper's.
-- The ten simulation experiments take about one hour on one core. Their
-  `_meta.runtime_s` values sum to 3,356 s.
-- The exact suite took 302 s of wall time on a 20-core workstation, as
-  Appendix E reports. The `_meta.runtime_s` values of the 13 R files sum to
-  300.7 s.
+- The ten experiments, nine simulations and the closed-form grid E4, take about
+  one hour on one core. Their `_meta.runtime_s` values sum to 3,356 s.
+- The exact suite took 302 s of wall time on a 20-core workstation, which
+  Appendix E gives as about five minutes. The `_meta.runtime_s` values of the
+  13 R files sum to 300.7 s.
 - `exact_experiments.py` starts with R1, which reads all ten E files and
   records the SHA-256 and size of each. Without them it stops at R1. The other
   experiments run alone, for example
@@ -112,8 +114,8 @@ The script reads `E2_phase_transition.json`, `R1_exact_validation.json` and
 `R2_frontiers.json`, recomputes the exact curves with `exact.py` and prints a
 table of 85 checks of the plotted values against the stored results and the
 paper's numbers. It exits with status 1 if a check fails. `cmp` prints nothing
-when the files are identical byte for byte, as they are with the versions
-above. Other Matplotlib or fontTools builds can embed different bytes while
+when the files are identical byte for byte, as they are with the builds
+that `results/README.md` names under "Figures". Other Matplotlib or fontTools builds can embed different bytes while
 all checks pass. Without `--outdir` the script overwrites `figures/`. With
 `--all` it also draws `robust.pdf`, which plots the frontiers of Section 5.4
 of the paper but is not one of its figures, and runs 173 checks.
@@ -186,7 +188,7 @@ computed exactly. `exact.py` does this, and `exact_experiments.py` uses it.
   strike-all time-average roots of R4 at k_max = 8 and 32.
 * **Engines.** Birth–death chains use the symmetrized spectral form
   `pi_U expm(Q_UU T) 1 = sum_m (v_m' sqrt(pi_U))^2 exp(lambda_m T)` (all terms
-  non-negative, stationary law by detailed balance in log space). Above 200
+  nonnegative, stationary law by detailed balance in log space). Above 200
   states they use SciPy's `expm_multiply` on the symmetrized matrix. That
   routine is Al-Mohy and Higham's scaled truncated Taylor method, although the
   code's comments and self-test output call it "Krylov". The chains for
@@ -214,8 +216,8 @@ computed exactly. `exact.py` does this, and `exact_experiments.py` uses it.
 | name pool, bursts (R1/E7) | `K` | K→max(0,K−b) at `lam_disc/b` | K ≥ 1 | kmax+1 |
 | strategic censor + reserve (R4) | `(A,R,D)`: active (served, discoverable) units, reserve units (undiscoverable), discovered-but-unblocked active units; D ≤ A, A+R ≤ kmax, R ≤ r | mint at `lam_intro` (to active if A=0, else to reserve if R<r, else to active); discovery at `lam_disc` while A−D ≥ 1, then the policy may strike (block all D); if A becomes 0 the reserve activates | A ≥ 1 | 9–560 |
 | censor best response (R4) | `(A,D)` with r = 0 | average-reward MDP: after each event the censor blocks any b ≤ D; maximizes P[A=0]; relative value iteration | n/a | 45 / 561 |
-| providers (R5) | occupancy counts `(n_0..n_kp)`, n_l = providers holding l units, Σ n_l = P | *pooled*: mint at `lam_intro` into a uniformly random non-full provider, takedown at `lam_disc` empties a uniformly random non-empty provider; *idle*, the idle-clock model (E9): per-provider clocks `lam_intro/P`, `lam_disc/P` | n_0 < P | 9–70 |
-| mint-time exposure (R8) | `(E,U)`: exposed / unexposed live units, E+U ≤ kmax | mint at `lam_intro` (exposed w.p. rho); pre-emptive burn at `theta E`; usage burn at `lam_disc` hits a uniformly random live unit | E+U ≥ 1 | 45 / 561 |
+| providers (R5) | occupancy counts `(n_0..n_kp)`, n_l = providers holding l units, Σ n_l = P | *pooled*: mint at `lam_intro` into a uniformly random non-full provider, takedown at `lam_disc` empties a uniformly random nonempty provider; *idle*, the idle-clock model (E9): per-provider clocks `lam_intro/P`, `lam_disc/P` | n_0 < P | 9–70 |
+| mint-time exposure (R8) | `(E,U)`: exposed / unexposed live units, E+U ≤ kmax | mint at `lam_intro` (exposed w.p. rho); preemptive burn at `theta E`; usage burn at `lam_disc` hits a uniformly random live unit | E+U ≥ 1 | 45 / 561 |
 
 Exact reductions checked in code: strategic `poisson` (any r) = constant pool,
 providers `pooled` with kp = 1 = constant pool, exposure with rho = 0 =
@@ -230,14 +232,14 @@ unit-level Monte Carlo with 16 seeds each, and all |z| < 2.4 (the largest are
 
 | key | file | content |
 |---|---|---|
-| R1 | `R1_exact_validation.json` | exact vs the event-driven simulations E1–E10 (implementation check) |
+| R1 | `R1_exact_validation.json` | exact vs E1–E10 (nine event-driven simulations and the closed-form grid E4), the implementation check |
 | R2 | `R2_frontiers.json` | beta*_avg and exact interval beta*(alpha,T) vs kmax |
 | R3 | `R3_budget_split.json` | censor budget split, corners, corner criterion (not reported in the paper) |
 | R4 | `R4_strategic_censor.json` | strategic timing censor, reserve, MDP best response |
 | R5 | `R5_diversification.json` | pooled diversification vs single pool vs idle-clock model (E9) |
 | R6 | `R6_heavy_tail_discovery.json` | p = E[exp(−mu D)] for mean-1 discovery laws |
 | R7 | `R7_sync_discovery.json` | synchronized (sweep) address discovery |
-| R8 | `R8_mint_exposure.json` | mint-time exposure (pre-emptive burns) |
+| R8 | `R8_mint_exposure.json` | mint-time exposure (preemptive burns) |
 | R9 | `R9_range_blocking.json` | range-blocked provider space (crisis regime) |
 | R10 | `R10_perunit_normalization.json` | per-unit (per-name) discovery, three normalizations, against the constant-rate pool (Appendix C) |
 | R11 | `R11_profiles.json` | exact beta* at the illustrative presets of `censor_models.py` (not fits) |

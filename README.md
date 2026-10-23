@@ -68,7 +68,8 @@ Each part has its own documentation.
 - Python 3 with NumPy, SciPy, Matplotlib, pandas and requests.
   `python3 -m pip install -r requirements.txt` installs the versions of the
   paper's runs, NumPy 2.2.4, SciPy 1.15.3, Matplotlib 3.10.1, pandas 3.0.6 and
-  requests 2.32.3, as PyPI builds. Other versions are untested.
+  requests 2.32.3, as PyPI builds. Other versions are untested, apart from the
+  figure redraw that `simulations/results/README.md` describes under "Figures".
 - The paper's runs used Python 3.13.7 on Ubuntu 25.10, with Ubuntu's packages
   of NumPy (2.2.4+ds-1ubuntu1) and SciPy (1.15.3-1), which use the reference
   BLAS and LAPACK 3.12.1, of Matplotlib (3.10.1+dfsg1-4) with fontTools 4.55.3
@@ -84,9 +85,9 @@ Each part has its own documentation.
 - `mutool` from MuPDF is optional. With it, `make_figures.py` also checks the
   page size, font sizes and page bounds of each figure.
 - The byte-for-byte identity of the figures was verified with the Matplotlib
-  build of the paper's runs, the Ubuntu package above. Other builds, such as
-  the PyPI wheel of the same version, can embed different bytes while all
-  checks pass.
+  build that `simulations/results/README.md` names under "Figures" (Ubuntu's
+  3.10.7+dfsg1 with fontTools 4.61.1). Other builds, such as the PyPI wheel of
+  the same version, can embed different bytes while all checks pass.
 
 ## Quick checks without downloads
 
@@ -96,7 +97,7 @@ about five minutes. `simulations/results/README.md` gives the expected output
 of each.
 
 The result files record the SHA-256 of the solver code, and R1 records the
-SHA-256 of the ten simulation files it compared. This checks both records.
+SHA-256 of the ten `run_experiments.py` result files it compared. This checks both records.
 
 ```bash
 python3 - <<'EOF'
